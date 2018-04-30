@@ -7,6 +7,7 @@ module.exports = {
       { text: 'Home', link: '/' },
       { text: 'Apps', link: '/apps/' },
       { text: 'Concepts', link: '/concepts/' },
+      { text: 'C#', link: '/csharp/' },
       { text: 'GitHub', link: 'https://github.com/danielsimionescu' },
       { text: 'YouTube', link: 'https://www.youtube.com/channel/UCPIe87uLDW-QZ5FnUZqdxoA' },
       {
