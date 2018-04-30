@@ -1,0 +1,20 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Documentation for the YouTube channel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "keywords": [
+    "vue.js",
+    "vuepress"
+  ],
+  "author": "Daniel Simionescu",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^0.8.4"
+  }
+}
