@@ -1,0 +1,44 @@
+---
+title: Arrays in C#
+---
+
+# What are arrays?
+Arrays are actually objects :thinking:.
+
+
+## Why using arays?
+You can use arrays to store same type variables.
+
+Imagine you have three numbers and you want to calculate their sum. Well, we could declare these numbers as individual variables and them create another one to hold the sum:
+
+``` csharp
+var nr1 = 3;
+var nr2 = 5;
+var nr3 = 4;
+
+var sum = nr1 + nr2 + nr3;
+Console.WriteLine(sum);
+```
+
+This works well, but what happens if we have 10 numbers? What about something crazy like `75268` numbers?
+Imagine how many variables you need to write! :astonished:
+
+![Scared dog](https://media.giphy.com/media/51Uiuy5QBZNkoF3b2Z/giphy-downsized-large.gif)
+
+This is where arrays kick in. Let's rewrite the program with an array instead:
+
+``` csharp
+var numbers = new[] { 3, 5, 4 };
+
+var sum = numbers.Sum();
+Console.WriteLine(sum);
+```
+
+Awesome! And now we don't have to worry about those declaring those `75265` numbers as individual variables :hugs:.
+
+::: tip Summary
+So arrays as useful when you deal with a whole **bunch** of variables of the same type which need some sort of manipulation.
+:::
+
+![School of fish](https://media.giphy.com/media/d2ZdCm8GkXzAVNXq/giphy.gif)
+
