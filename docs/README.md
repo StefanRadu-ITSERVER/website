@@ -1,10 +1,10 @@
 ---
 home: true
 meta:
-  - name: description
-    content: hello
+  - name: documentation website for the YouTube channel
+    content: YouTube
   - name: keywords
-    content: super duper SEO
+    content: coding programming tutorials C# learning
 actionText: Discover Tutorials →
 actionLink: /csharp/
 features:

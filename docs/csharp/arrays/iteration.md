@@ -2,12 +2,15 @@
 title: Iteration
 ---
 
+## Iterating over C# Arrays
 
-First, we need to look at the `Lenght` property.
+Let's see how we can iterate over C# arrays. But first, we need to look at the `Length` property.
+
+
 
 ### `Length` property
 
-You can find how many items are in an array by accessing the `Length` property:
+You can find **how many** items are in an array by accessing its `Length` property:
 
 ``` csharp
 var length = fruits.Length;
@@ -22,7 +25,7 @@ The array exposes the `Count()` method as well, but the `Length` property is fas
 We can use the `for` loop to iterate, or we can just use `foreach`.
 
 ::: tip foreach
-You are able to iterate through arrays using the `foreach` loop because they implement `IEnumerable`.
+You are able to iterate through arrays using the `foreach` loop because they implement the `IEnumerable` interface.
 :::
 
 Here are both ways:
@@ -53,10 +56,10 @@ Press enter to stop execution.
 ```
 Pretty nice :)
 
-![Michelle nice](https://media.giphy.com/media/AGOPaltgJ2pBC/giphy.gif)
+<!-- ![Michelle nice](https://media.giphy.com/media/AGOPaltgJ2pBC/giphy.gif) -->
 
 ::: tip Loops
-My reccomendation is to use `foreach` over `for` when looping, but this depends on the scenario: if you need to use the index somehow, then you should use the `for` loop, if it's just a simple looping through the items, use `foreach`.
+My reccomendation is to use `foreach` over `for` when looping, but this depends on the scenario: if you need to use the index somehow, then you should use the `for` loop, if it's just a simple looping through the items, use `foreach`. :+1:
 :::
 
 
@@ -68,7 +71,9 @@ fruits[1] = "cherry";
 //fruits[2] = "pineapple";
 //fruits[3] = "plum";
 ```
-If we run now, you can see some spaces new lines with no value:
+
+If we run now our code, you can see some new lines with no values:
+
 ```
 apple
 cherry
@@ -79,10 +84,11 @@ Press enter to stop execution.
 ```
 
 ::: tip Default values
-Well, in fact these are not empty. There is a difference between null and empty (coming soon). But, in essence, when you don't assign a value to a position in the array, that position gets the default value of the type of the array (in our case it gets `null` because the type of the array is `string`).
+Well, in fact these are not empty. There is a difference between `null` and `empty` (coming soon). But, in essence, when you don't assign a value to a position in the array, that position gets the `default value` of the type of the array (in our case it gets `null` because the type of the array is `string`).
 :::
 
-Let's try to check for `null` values to see if there are null values indeed:
+Let's try to check for `null` values to see if there are indeed `null` values:
+
 ``` csharp
 foreach (var fruit in fruits)
 {
@@ -92,7 +98,9 @@ foreach (var fruit in fruits)
         Console.WriteLine(fruit);
 }
 ```
-And we can see in the result that we have indeed null values:
+
+And we can see in the result that we have indeed `null` values:
+
 ```
 apple
 cherry
@@ -103,8 +111,8 @@ Press enter to stop execution.
 ```
 
 ::: tip
-The compiler just doesn't print `null` to the console. It prints nothing, but we as programmers :satisfied: know that those are in fact null.
+The compiler just doesn't print `null` to the console. It prints nothing, but we as programmers know that those are in fact null. :satisfied:
 :::
 
-So, now you know about `default` values. I am going to cover all the other default values soon, so keep an eye on my channel and on this website :upside_down_face:
+So, now, you know about `default` values. I am going to cover all the other `default values` soon, so keep an eye on my channel and on this website :upside_down_face:
 

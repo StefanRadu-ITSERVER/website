@@ -2,12 +2,11 @@
 title: Methods
 ---
 
-## Top 10 methods
-We are going to see the most important methods provided by the `Array` class.
-
+## C# Array Methods
+We are going to see the top `10` most important methods provided by the `Array` class.
 
 ### `Array.Copy()`
-This method copies the items of an array to another one. The third argument is to specify how many items to copy.
+This method copies the items of an array to another one. The third argument is to specify how many items you want to copy:
 
 ``` csharp
 var fruits = new[] { "apple", "cherry", "pineapple", "plum" };
@@ -22,15 +21,18 @@ To copy all the items, just pass `fruits.Length` as the third argument.
 
 
 ### `Array.IndexOf()`
+This returns the `index` of an item inside the array, in our case `2` for lemon :lemon::
+
 ``` csharp
 var fruits = new[] { "melon", "coconut", "lemon" };
 
-var result = Array.IndexOf(fruits, "coconut");
+var result = Array.IndexOf(fruits, "lemon");
 
-Console.WriteLine(result); // 1
+Console.WriteLine(result); // 2
 ```
 
 ### `Array.Exists()`
+It checks to see whether or not an item exists in an array (this accepts a `Predicate`):
 
 ``` csharp
 var fruits = new[] { "melon", "coconut", "lemon" };
@@ -41,6 +43,8 @@ Console.WriteLine(result);
 ```
 
 ### `Array.Find()`
+This simply finds an item in an array:
+
 ``` csharp
 var fruits = new[] { "melon", "coconut", "lemon" };
 
@@ -50,6 +54,8 @@ Console.WriteLine(result);
 ```
 
 ### `Array.FindLast()`
+As the `Find` method, this starts from the **end** of the array:
+
 ``` csharp
 var fruits = new[] { "melon", "coconut", "lemon" };
 
@@ -59,6 +65,8 @@ Console.WriteLine(result);
 ```
 
 ### `Array.FindIndex()`
+We can also find the index of an item by using `Predicates`:
+
 ``` csharp
 var fruits = new[] { "melon", "coconut", "lemon" };
 
@@ -68,6 +76,8 @@ Console.WriteLine(result);
 ```
 
 ### `Array.FindAll()`
+We can find all the items that respect a certain condition:
+
 ``` csharp
 var fruits = new[] { "melon", "coconut", "lemon" };
 
@@ -80,6 +90,8 @@ foreach (var fruit in result)
 ```
 
 ### `Array.Reverse()`
+We can reverse the items in an array:
+
 ``` csharp
 var fruits = new[] { "melon", "coconut", "lemon" };
 
@@ -92,6 +104,8 @@ foreach (var fruit in fruits)
 ```
 
 ### `Array.Sort()`
+And one of the most important, we can **sort** an array:
+
 ``` csharp
 var fruits = new[] { "melon", "coconut", "lemon" };
 
@@ -105,13 +119,13 @@ foreach (var fruit in fruits)
 
 Maybe we want to reverse the order in which case we need to create a new class which implements the `IComparer` interface:
 ``` csharp
-    public class ReverseComparer : IComparer<String>
+public class ReverseComparer : IComparer<String>
+{
+    public int Compare(string x, string y)
     {
-        public int Compare(string x, string y)
-        {
-            return y.CompareTo(x);
-        }
+        return y.CompareTo(x);
     }
+}
 ```
 
 And then, just pass an instance of this class as an argument:
@@ -128,7 +142,7 @@ foreach (var fruit in fruits)
 ```
 
 ### `Array.BinarySearch()`
-You can search for an element in a **sorted** array (you must sort the array in an ascending order before applying this algorithm).
+You can search for an element in a **sorted** array (you must sort the array in an ascending order before applying this algorithm):
 
 ``` csharp
 var prices = new[] { 12, 32, 53.3, 43 };
@@ -145,3 +159,8 @@ else
 ::: danger Duplicates
 If an array contains duplicate elements (which have the same value), then `BinarySearch` will return the index of one of those elements.
 :::
+
+
+### Next
+If you are interested how to implement these methods procedurally (reinventing the wheel), you can read the next post:
+

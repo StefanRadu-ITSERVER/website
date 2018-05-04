@@ -2,15 +2,15 @@
 title: Declaration
 ---
 
-## Arrays in C#
+# Declaring Arrays
 
-We are going to learn about creating and initializing arrays in C#.
+Let's see how we can create and initialize arrays in C#.
 
 ## How to create arrays?
 
-Let's see how we can create an array in C#. Basically, there are a couple of ways and semantic differences that you can use. We are going through some of them and then conclude which ones to use in the future :smirk:
+Basically, there are a couple of ways and semantic differences that you can use. We are going through some of them and then conclude which ones to use in the future :smirk:
 
-So, let's use the `string` type as the type for the array (but you can make it as any type as you want: `int`, `double`, `Object`, `array` etc.).
+So, let's use the `string` type as the type for our array (you can choose any type you want: `int`, `double`, `Object`, `array` etc.).
 
 
 ### Declaration
@@ -20,81 +20,106 @@ string[] fruits =
 ```
 
 ### Assignment
-Here we assign a value to the array:
+Let's assign a value to the array:
+
 ``` csharp
 string[] fruits = new string[];
 ```
-We have to use the square brackets `[]` and since an array is indeed an `Object` it is created with the `new` statement referred to by a variable (by reference). 
 
-::: danger Error
-Unfortunately, we need to specify the size of the array when we create it. Arrays in C# are not **dynamic** in the sense that their size must be specified right at the beginning.
+We have to use the square brackets `[]` and since an array is indeed an `Object`, it is created with the `new` statement referred to by a variable (reference type). 
+
+::: danger Fixed size
+Unfortunately, we need to specify the **size** of the array when we create it. Arrays in C# are not **dynamic** in the sense that their **size** must be specified right at the beginning.
 :::
 
-Let's specify the size (or the capacity – same thing):
+Let's specify the size (or the capacity – same thing) for our array:
+
 ``` csharp
 string[] fruits = new string[4];
 ```
-So this array has the size 4 which means it can hold 4 items (we can put 4 items inside of it).
+
+So this array has the size `4` which means it can hold `4` items.
 
 ::: warning Indexers
-One thing to remember, computers don't count like we count: we start by counting from 1 (1, 2, 3...), whereas computers count from 0 (0, 1, 2, 3...). This is how computers count :astonished:
+One thing to remember is that computers don't count like we count: we start by counting from 1 (1, 2, 3...), whereas computers count from 0 (0, 1, 2, 3...). This is how computers count :astonished:
 :::
 
-So, the the indexes range from 0 to array.Length - 1.
-
+So, array indexes range from `0` to `array.Length - 1`. 
 
 Nevertheless, let's continue.
 
-### Object initializer
-
-We can declare, assign and initialize the array at once. So, there is no need for us to write assignment on different lines. This is the the **object initializer** shines: <br> <br>
-![Shining](https://media.giphy.com/media/3VSM58Eu7kR4A/giphy.gif)
+## How to add items?
+We can start putting items in some positions by adding two fruits:
 
 ``` csharp
-string[] fruits = new string[4] { "apple", "cherry", "pineapple", "plum" };
+fruits[0] = "apple";
+fruits[1] = "cherry";
 ```
 
-We can also leave out the size because the compiler is smart enough to infer (know) that. So, we can remove `4`:
-
-```csharp
-string[] fruits = new string[] { "apple", "cherry", "pineapple", "plum" };
-```
-
-Well, this inteligence of the compiler can lead us to other places as well :nerd_face:. Because the compiler can inferre many things, we can simplify the way we create arrays:
-
-1. we can leave out the type (in our case `string`):
-```csharp
-string[] fruits = new[] { "apple", "cherry", "pineapple", "plum" };
-```
-
-2. we can also leave out the `new[]` altoghether:
-```csharp
-string[] fruits = { "apple", "cherry", "pineapple", "plum" };
-```
-
-3. or we can make use of the `var` keyword. In this case, we need to speficy the `new` keyword.
-```csharp
-var fruits = new[] { "apple", "cherry", "pineapple", "plum" };
-```
-
-::: tip Implicitly Typed Arrays
-These arrays are called Implicitly Typed Arrays because their type is inferred based on the assignment. They are great for object initializers and anonymous types.
+::: tip Remember
+All collections start at index 0. This is where we put our apple :apple:.
 :::
 
-
-Number two works because on the left side of the declaration we defined the type (`string[]`). But if we use `var` there is no way for the compiler to know what is the type assignment.
-
-::: tip Choices
-So, which one to use? I recommend using the third option because it makes use of the `var` keyword and it makes writing code faster. Still, if you want to tell that those are indeed strings, you can specify that with `new string[]`. It's up to you how much clarity you need to convey in your code. :blush:
+::: warning TIP
+Notice that you don't have to fill **all** the positions of the array. We've just added `2` even though we had `4` position available. :wink:
 :::
 
-Here I conclude my thoughts about array creating in C#. I will continue with methods that you can use with arrays and I am going to switch to the `int` type, but remember any type can work with arrays: `string`, `int`, `char`, `Object` etc.
+Let's try adding `3` more items and see what we get:
+
+``` csharp
+fruits[2] = "pineapple";
+fruits[3] = "plum";
+fruits[4] = "peach";
+```
+
+::: danger IndexOutOfRangeException
+And we get the following exception: _System.IndexOutOfRangeException: 'Index was outside the bounds of the array._'
+:::
+
+This happend because we tried to add way to many items. The error was thrown by the third line with the peach :peach::
+``` csharp {3}
+fruits[2] = "pineapple";
+fruits[3] = "plum";
+fruits[4] = "peach";
+```
+
+So, essentially, we cannot:
+- change the **size** of the array;
+- **add** too many items to it; 
+- ...
+- do so many things :weary:
+
+<!-- ![Throwing table](https://media.giphy.com/media/dRgcwKJaGgWgo/giphy.gif) -->
+
+## List
+
+This is where the Generic `List` comes into play :play_or_pause_button:. We are going to cover it soon...
+
+::: tip List vs Arrays
+Still, there are many use cases for the `Arrays` and we don't just throw them in the trash because they can't `resize` themselves :confused:. Maybe, in some scenarios this is the exact behaviour that what we want :smiley:
+:::
+
+---
+
+To move on, we can remove that line and iterate through the array to display its values:
+
+``` csharp
+for(var i = 0; i < fruits.Length; i++)
+{
+    Console.WriteLine(fruit[i]);
+}
+```
+
+Now, this array has items from `fruits[0]` to `fruits[3]`.
 
 
-#### `Resize` method
-There is a method called `Resize` which might do what it expresses through its name: to resize (change the size) of the array. But we said that the array it's immutable :fearful:. 
-<br>
-Well, the statement still hold true. What the Resize method does is that it's creating another array in the background and reassigning it to our array variable. So, it's not changing the array. Is this a perfomance issue? Certainly!
+### `Array.Resize()` method
+There is a method called `Resize` which might do what it expresses through its name: to resize (change the **size**) of the array. But we said that the array it's **immutable** :fearful:. 
+
+
+Well, this statement still holds true. What the `Resize` method does is that it's another array in the background and reassigns it to our array variable. So, it's not changing the array. Is this a **perfomance** issue? Certainly!
+
+Let's see how it works. I want to remove half of the items for the array:
 
 ``` csharp
 int[] numbers = new int[] { 23, 25, 64, 7, 5, 3, 2, 43, 53, 32 };
@@ -107,3 +132,7 @@ Console.WriteLine(numbers.Length); // 5
 > The Resize method allocates a new array with the specified size, copies elements from the old array to the new one, and then replaces the old array with the new one.
 
 You can read it for youself [here](https://msdn.microsoft.com/en-us/library/bb348051(v=vs.110).aspx#Anchor_2)
+
+
+## Summarry
+So, this is how you can create arrays. In the next post I am going to show you a faster, shorter way of doing declaration and initialization. ;)
