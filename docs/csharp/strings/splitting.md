@@ -2,19 +2,20 @@
 title: Splitting
 ---
 
-### `Split` method
+## Splitting by characters
 We can split any string into separate parts based on a specified character. The `Split` method returns an array.
 
 ``` csharp
 var list = "coconut,melon,avocado";
 var fruits = list.Split(',');
+
 foreach (var fruit in fruits)
 {
     Console.WriteLine(fruit);
 }
 ```
 
-![Watermelon](https://media.giphy.com/media/TQI4MzZIoHBcs/giphy-downsized-large.gif)
+<!-- ![Watermelon](https://media.giphy.com/media/TQI4MzZIoHBcs/giphy-downsized-large.gif) -->
 
 
 If there are empty items in the resulting array, we can remove them. Notice that we added a new array for specifying the separators / delimiters.
@@ -23,11 +24,14 @@ If there are empty items in the resulting array, we can remove them. Notice that
 var list = "coconut,,melon,avocado,";
 var charSeparators = new char[] { ',' };
 var fruits = list.Split(charSeparators, StringSplitOptions.RemoveEmptyEntries);
+
 foreach (var fruit in fruits)
 {
     Console.WriteLine(fruit);
 }
 ```
+
+### Splitting in `n` parts
 
 We can set the maximum number of substrings which will be returned:
 
@@ -35,6 +39,7 @@ We can set the maximum number of substrings which will be returned:
 var list = "coconut,,melon,avocado,";
 var charSeparators = new char[] { ',' };
 var fruits = list.Split(charSeparators, 2);
+
 foreach (var fruit in fruits)
 {
     Console.WriteLine(fruit);
@@ -49,6 +54,7 @@ coconut
 If you want, you can add `StringSplitOptions.RemoveEmptyEntries` because there is an overload for it.
 :::
 
+## Splitting by strings
 
 Instead of a simple character `char`, we can have strings as delimiters, but we need to specify the splitting options (in this case `None`):
 ``` csharp

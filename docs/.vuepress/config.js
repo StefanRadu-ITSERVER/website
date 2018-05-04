@@ -34,6 +34,7 @@ module.exports = {
 
       '/csharp/strings/': [
         'declaration',
+        'interpolation',
         'literals',
         'comparing',
         'methods',

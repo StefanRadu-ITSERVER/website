@@ -1,8 +1,10 @@
 ---
-title: Methods
+title: String Methods
 ---
 
-## String Manipulation
+# String Manipulation
+
+## 15 String Methods Explained in under X minutes
 
 We are going to see some useful methods that can be used on `String` objects.
 To illustrate the methods, we can use this variable as our example:
@@ -11,11 +13,7 @@ var text = "It's a cold day in the woods";
 ```
 
 
-[[toc]]
-
-
-
-### `Substring()` method
+## `Substring()` method
 This method returns a brand-new string with the value: "a cold day"
 ``` csharp
 var subtext = text.Substring(5, 10);
@@ -24,7 +22,7 @@ Console.WriteLine(subtext);
 So, we can get only a part of a `string`.
 
 
-### `Join()` method
+## `Join()` method
 We can create a new string based on an array of values and a separator.
 ``` csharp
 var numbers = new[] { 1, 2, 3, 4, 5 };
@@ -36,7 +34,7 @@ Console.WriteLine(result);
 
 
 
-### `Concat()` method
+## `Concat()` method
 We can combine two string together. If we run just this line:
 ``` csharp
 string.Concat(text, " of the village");
@@ -61,12 +59,12 @@ The compiler is smart enough to tell that when you use the `+` operator with str
 <br>
 The compiler is **dope**.
 :::
-![Dope girl](https://media.giphy.com/media/Zy2H3rtcczV96/giphy.gif)
+<!-- ![Dope girl](https://media.giphy.com/media/Zy2H3rtcczV96/giphy.gif) -->
 
 
 
 
-### `Replace()` method
+## `Replace()` method
 We can replace any string occurance inside of a string:
 ``` csharp
 text = text.Replace("cold", "warm");
@@ -77,28 +75,28 @@ This works the same as the `string.Concat()` method: it returns a new string. We
 Like the `Substring` method, `Replace` actually returns a new string and does not modify the original string.
 
 
-### `ToUpper()` method
+## `ToUpper()` method
 We can transform all the characters of a string to upper case:
 ``` csharp
 text = text.ToUpper();
 Console.WriteLine(text);
 ```
 
-### `ToLower()` method
+## `ToLower()` method
 ``` csharp
 text = text.ToLower();
 Console.WriteLine(text);
 ```
 
 
-### `Insert()` method
+## `Insert()` method
 We can insert another sequence inside of a string:
 ``` csharp
 text = text.Insert(12, "foggy ");
 Console.WriteLine(text);
 ```
 
-### `IndexOf()` method
+## `IndexOf()` method
 We can find the starting index of a specific string inside another one:
 ``` csharp
 var index = text.IndexOf("warm");
@@ -109,14 +107,14 @@ If the method returns a negative index (-1), then it means that there is no such
 :::
 
 
-### `Length` property
+## `Length` property
 We can get the length / size of a string through the Length property:
 ``` csharp
 var length = text.Length;
 Console.WriteLine(length);
 ```
 
-### `Contains` method
+## `Contains` method
 We can use the `Contains` method to check if there is a string in another one:
 ``` csharp
 if (text.Contains("warm"))
@@ -125,15 +123,20 @@ if (text.Contains("warm"))
 }
 ```
 
-### `Copy` method
+## `Copy` method
 We can copy the value of one string to another one:
 ``` csharp
 var anotherText = string.Copy(text);
 Console.WriteLine(anotherText);
 ```
 
+## StartsWith
 
-### `Trim` method
+## EndsWith
+
+
+
+## `Trim` method
 
 We can remove white-spaces from the beginning and end of a string with the `Trim` method:
 
@@ -154,7 +157,7 @@ phoneNumber = phoneNumber.Trim(chars);
 ```
 
 
-### `ToArray()` method
+## `ToArray()` method
 We can transform a string to an array:
 ``` csharp
 var textAsArray = text.ToArray();
@@ -162,7 +165,7 @@ Console.WriteLine(textAsArray);
 ```
 
 
-#### Example
+## Example
 Let's now use these methods to not guess where a string is, but to do it programmatically:
 ``` csharp
 var term = "warm";
@@ -191,7 +194,7 @@ Keep in mind that all the methods that appear/seem to change a string, in fact t
 :::
 
 
-### Bye
+## Bye
 You can now have fun with these methods :sweat_smile:
 
 ![Fun](https://media.giphy.com/media/FUhalvNbmECkg/giphy.gif)

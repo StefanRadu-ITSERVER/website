@@ -1,5 +1,4 @@
-
-### String literals
+## String literals
 Tehre are same sequences that you can insert inside strings to create a new line, or to add a tab. These are: \n, \t, \r, \\ etc.
 
 ``` csharp
@@ -13,31 +12,25 @@ Console.WriteLine(rows);
 These are also called **escape characters**.
 
 
+### How to create a multiline string?
 
-How to create a multiline string?
---- copied
+We can use the **verbatim operator**.
+``` csharp
+var text = @"This is a text
+on multiple
+lines";
+```
 
- Use verbatim strings for convenience and better readability when the string text contains backslash characters, for example in file paths. Because verbatim strings preserve new line characters as part of the string text, they can be used to initialize multiline strings. Use double quotation marks to embed a quotation mark inside a verbatim string. The following example shows some common uses for verbatim strings:
-C#
+Also, we can use this to not repeat ourselves when we want to insert backslash characters, or quotes in strings:
 
-string filePath = @"C:\Users\scoleridge\Documents\";
-//Output: C:\Users\scoleridge\Documents\
+``` csharp
+string filePath = @"C:\Users\Public\Documents";
+```
 
-string text = @"My pensive SARA ! thy soft cheek reclined
-    Thus on mine arm, most soothing sweet it is
-    To sit beside our Cot,...";
-/* Output:
-My pensive SARA ! thy soft cheek reclined
-   Thus on mine arm, most soothing sweet it is
-   To sit beside our Cot,... 
-*/
+instead of:
 
-string quote = @"Her name was ""Sara.""";
-//Output: Her name was "Sara."
+``` csharp
+string filePath = "C:\\Users\\Public\\Documents";
+```
 
---- copied
-
-
-
-
-
+This operator is very convenient. :)

@@ -13,17 +13,23 @@ if (name == secondName) {
 }
 ```
 
-Also, we can see if they are different:
+Also, we can see if they are different with the `!=` operator:
 ``` csharp
 if (name != secondName) {
     // this is false
 }
 ```
 
+### Ignoring Case
+
 But there is a limitation here: what about ignoring the case of the characters?
+
 We could still do the same thing as before with the `Equals` method:
+
+``` csharp
 if(string.Equals(name, secondName))
     Console.WriteLine("these are equal");
+```
 
 But at the same time, we can specify whether or not we want the to ignore the casing of the strings:
 ``` csharp
@@ -38,7 +44,7 @@ if (first.Equals(second, StringComparison.OrdinalIgnoreCase))
 So, for non-case-sensitive comparisons, use the equals method and pass a second argument of `OrdinalIgnoreCase`.
 
 
-### `Compare` method
+## `Compare` method
 We can compare string as well. The `Compare` method compares the ASCII codes of each character.
 
 ``` csharp

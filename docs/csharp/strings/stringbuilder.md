@@ -1,6 +1,6 @@
-### StringBuilder
+# StringBuilder
 
-Taking the same example with reversing strings, we can you string concatenation for this:
+Taking the same example with [reversing strings](/csharp/strings/reversing.md), we can use **string concatenation** for doing this:
 
 ``` csharp
 var text = "Reversing strings is easy";
@@ -14,9 +14,10 @@ Console.WriteLine(reversedString);
 ```
 
 ::: danger Immutability
-But this is so inneficient. Every single time we append a new character, the compiler creates a new string and assigns to the `text` variable. So efficiency is very low.
+But this is very **inneficient**. Every single time we append a new character, the compiler creates a new string and assigns to the `text` variable. So efficiency here is very low. :-1:
 :::
 
+## String Concatenation
 
 Any change to a string the compiler will produce a new string and will put that in the 
 original string. But by using this class, then it will behave like we were expecting a regular string to behave.
@@ -25,7 +26,7 @@ original string. But by using this class, then it will behave like we were expec
 To solve this, we can use the `StringBuilder` object. This class was created to solve the problem with the immutability of strings. It has a method called `append`:
 
 
-#### Efficiently working with String:
+### Efficiently working with String:
 It is recommended to use a class named StringBuilder if you want to change the value of a string.
 
 ```csharp 
@@ -39,6 +40,8 @@ Here we add more text to the string and here is why it is more benefic to use in
 builder.Append(", ").Append("World").Append("!");
 Console.Write(builder.ToString());
 ```
+
+### How StringBuilder works?
 
 The StringBuilder doesn't create any new string, it only creates a single object in memory and builds strings in the most efficient way possible.    
 
@@ -61,5 +64,5 @@ Console.WriteLine(reversedString.ToString());
 ```
 
 ::: tip 
-You can think of the StringBuilder as modelling a mutable implementation of a string.
+You can think of the `StringBuilder` as a class which models a mutable implementation of a string.
 :::
