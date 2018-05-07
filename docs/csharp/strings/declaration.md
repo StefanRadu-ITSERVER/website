@@ -51,7 +51,7 @@ string name;
 Notice that this time we used `string` and not `var`.
 :::
 
-### `String.IsNullOrEmpty()` method
+### IsNullOrEmpty method
 
 We can check to see whether a string is `null` or `empty`:
 ``` csharp

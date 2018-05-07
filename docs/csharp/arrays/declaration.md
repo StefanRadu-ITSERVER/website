@@ -1,5 +1,5 @@
 ---
-title: Declaration
+title: Declaring Arrays
 ---
 
 # Declaring Arrays
@@ -89,7 +89,9 @@ So, essentially, we cannot:
 - ...
 - do so many things :weary:
 
-<!-- ![Throwing table](https://media.giphy.com/media/dRgcwKJaGgWgo/giphy.gif) -->
+![Throwing table](https://media.giphy.com/media/dRgcwKJaGgWgo/giphy.gif)
+<br>
+[Giphy](https://giphy.com/gifs/cheezburger-rage-anger-dRgcwKJaGgWgo)
 
 ## List
 

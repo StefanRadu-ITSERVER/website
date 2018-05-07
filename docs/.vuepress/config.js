@@ -8,8 +8,9 @@ module.exports = {
       {
         text: 'C#',
         items: [
-          { text: "Strings", link: '/csharp/strings/declaration' },
-          { text: "Arrays", link: '/csharp/arrays/definition' }
+          // { text: "Strings", link: '/csharp/strings/declaration' },
+          { text: "Arrays", link: '/csharp/arrays/definition' },
+          // { text: "Dictionaries", link: '/csharp/dictionaries/declaration' }
         ]
       },
       { text: 'GitHub', link: 'https://github.com/danielsimionescu' },
@@ -18,30 +19,30 @@ module.exports = {
     sidebar: {
       '/csharp/arrays/': [
         'definition',
-        'declaration',
-        'initializers',
-        'arraylist',
-        'iteration',
-        'methods',
-        'procedurals',
-        'quicksort',
-        'quicksort-generics',
-        'quicksort-experiment',
-        'binarysearch',
-        'aggregates',
-        'opinion',
+        // 'declaration',
+        // 'initializers',
+        // 'arraylist',
+        // 'iteration',
+        // 'methods',
+        // 'procedurals',
+        // 'quicksort',
+        // 'quicksort-generics',
+        // 'quicksort-experiment',
+        // 'binarysearch',
+        // 'aggregates',
+        // 'opinion',
       ],
 
-      '/csharp/strings/': [
-        'declaration',
-        'interpolation',
-        'literals',
-        'comparing',
-        'methods',
-        'reversing',
-        'splitting',
-        'stringbuilder'
-      ],
+      // '/csharp/strings/': [
+      //   'declaration',
+      //   'interpolation',
+      //   'literals',
+      //   'comparing',
+      //   'methods',
+      //   'reversing',
+      //   'splitting',
+      //   'stringbuilder'
+      // ],
 
       '/': [
         ''
