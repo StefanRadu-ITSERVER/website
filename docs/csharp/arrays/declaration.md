@@ -136,5 +136,5 @@ Console.WriteLine(numbers.Length); // 5
 You can read it for youself [here](https://msdn.microsoft.com/en-us/library/bb348051(v=vs.110).aspx#Anchor_2)
 
 
-## Summarry
+## Summary
 So, this is how you can create arrays. In the next post I am going to show you a faster, shorter way of doing declaration and initialization. ;)
