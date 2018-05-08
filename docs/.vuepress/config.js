@@ -19,7 +19,7 @@ module.exports = {
     sidebar: {
       '/csharp/arrays/': [
         'definition',
-        // 'declaration',
+        'declaration',
         // 'initializers',
         // 'arraylist',
         // 'iteration',
