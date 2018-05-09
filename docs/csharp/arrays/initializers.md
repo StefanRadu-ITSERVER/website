@@ -2,7 +2,7 @@
 title: Object initializer
 ---
 
-## Object initializer
+# Object initializer
 
 We can declare, assign and initialize the array at once to avoid writing assignments as separate operations. 
 
