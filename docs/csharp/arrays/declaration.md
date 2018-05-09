@@ -1,5 +1,5 @@
 ---
-title: Declaring Arrays
+title: Adding Items
 ---
 
 # Adding items
@@ -14,7 +14,8 @@ In this example, we will use `string` as the type for our array, but you can cho
 string[] fruits = new string[];
 ```
 
-The square brackets `[]` show that we are dealing with an array, and the `new` keyword shows that the variable is an `Object` (reference type). 
+- the square brackets `[]` show that we are dealing with an array;
+- the `new` keyword shows that the variable is an `Object` (reference type).
 
 ::: danger Fixed size
 Unfortunately, we need to specify the **size** of the array when we create it. 
@@ -36,7 +37,7 @@ One thing to remember is that computers do **not** count like we count:
 
 Because of that, **array indexes** range from `0` to `array.Length - 1`. 
 
-## How to add items?
+## Adding items
 We can start putting items in some positions:
 
 ``` csharp
@@ -102,7 +103,5 @@ for(var i = 0; i < fruits.Length; i++)
 
 So, this array has items from `fruits[0]` to `fruits[3]`.
 
-
 ## Summary
 So, this is how you can add items to arrays. Next, I am going to show you a faster, shorter way of doing declaration and initialization in one line. ;)
-

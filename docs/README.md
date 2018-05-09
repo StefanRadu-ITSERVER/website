@@ -9,18 +9,21 @@ actionText: Discover Tutorials →
 actionLink: /csharp/
 features:
 - title: Tutorials
-  details: Amazing free tutorials about a wide range of programming languages C#, JavaScript, Python etc.
-- title: Cool
-  details: Amazing free tutorials about a wide range of programming languages C#, JavaScript, Python etc.
-- title: 
-  details: 
+  details: Amazing tutorials about a wide range of programming languages C#, JavaScript, Python etc.
+- title: Free
+  details: I am supporting free education and I believe that everyone should have access to great resources.
+- title: Up-to-date
+  details: I make continual effort to keep this website up-to-date with the latest technology trends.
 footer: Copyright © 2018 Daniel Simionescu
 ---
 
 ## Hi there!
 
-I am a passionate developer who longs to share his knowledge with others :D This website contains all the posts that I use for my [YouTube](https://www.youtube.com/channel/UCPIe87uLDW-QZ5FnUZqdxoA) channel.
+I am a passionate developer who longs to share his knowledge with others :D 
 
+This website contains all the posts that I use for my [YouTube](https://www.youtube.com/channel/UCPIe87uLDW-QZ5FnUZqdxoA) channel.
+
+You can drop me an email at: [daniel@danielsimionescu.com](mailto:daniel@danielsimionescu.com)
 
 <!-- ## Donation Link
 
