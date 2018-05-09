@@ -20,7 +20,7 @@ module.exports = {
       '/csharp/arrays/': [
         'definition',
         'declaration',
-        // 'initializers',
+        'initializers',
         // 'arraylist',
         // 'iteration',
         // 'methods',
