@@ -9,6 +9,7 @@ We can declare, assign and initialize the array at once to avoid writing assignm
 This is where the **object initializer** shines: 
 
 ![Shining](https://media.giphy.com/media/3VSM58Eu7kR4A/giphy.gif)
+<br>
 [Gihpy](https://giphy.com/gifs/3VSM58Eu7kR4A)
 
 ``` csharp

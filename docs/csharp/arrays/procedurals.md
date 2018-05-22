@@ -2,28 +2,14 @@
 title: Procedural Functions
 ---
 
-## Procedural Approach
+## Methods – Procedurals
 
-Here, I am going to show you how to procedurally implement the Array methods listed [here](/csharp/arrays/methods.md)
+I am going to show you how to **procedurally** implement the **array methods** listed [here](/csharp/arrays/methods.md)
 
-But, if you are curious, keep on reading! :D
-
-## Copy
-Let's copy the `contents` of one array to another:
-
-``` csharp
-var fruits = new[] { "apple", "cherry", "pineapple", "plum" };
-var fruits2 = new string[fruits.Length];
-
-for (int i = 0; i < fruits.Length; i++)
-    fruits2[i] = fruits[i];
-
-foreach (var fruit in fruits2)
-    Console.WriteLine(fruit);
-```
+Again, you should not reinvent the wheel. These methods are built-in C#, but if you are curious, let's see them! :smirk:
 
 ## IndexOf
-Let's try to find the `index` of an item in an array:
+Let's try to find the **index** of an item in an array:
 
 ``` csharp
 var fruits = new[] { "apple", "cherry", "pineapple", "plum" };
@@ -43,14 +29,15 @@ Console.WriteLine(index); // 1
 ```
 
 ::: tip break
-Once you have found the item you were looking for, you can __STOP__ the execution to make the algorithm more **efficient** (there is no need to go to the end of the array).
+Once you find the item you are looking for, you can __STOP__ the execution to make the algorithm more **efficient** (there is no need to go to the end of the array).
 :::
 
-<!-- ![Stop sign](https://media.giphy.com/media/EQZnVtaNxwLyo/giphy.gif) -->
-
+![Stop sign](https://media.giphy.com/media/EQZnVtaNxwLyo/giphy.gif)
+<br>
+[Giphy](https://giphy.com/gifs/woman-stop-weather-EQZnVtaNxwLyo)
 
 ## Exists
-We can check to see if there is any element in an array based on a condition:
+We can check to see if an item **exists** in an array based on a condition:
 
 ``` csharp
 var fruits = new[] { "apple", "cherry", "pineapple", "plum" };
@@ -68,9 +55,8 @@ for (int i = 0; i < fruits.Length; i++)
 Console.WriteLine(exists); // True
 ```
 
-
 ## Find
-We can simply find an item in an array (this returns the **first occurence**):
+We can simply find an item in an array (this returns the **first occurrence**):
 
 ``` csharp
 var fruits = new[] { "apple", "cherry", "pineapple", "plum" };
@@ -78,42 +64,18 @@ string item = null;
 
 for (int i = 0; i < fruits.Length; i++)
 {
-    if (fruits[i].Contains("l"))
+    if (fruits[i].Contains("r"))
     {
         item = fruits[i];
         break;
     }
 }
 
-Console.WriteLine(item); // apple
-```
-
-
-## FindAll
-We can also find **all** the items in an array that respect a certain condition:
-
-``` csharp
-var fruits = new[] { "apple", "cherry", "pineapple", "plum" };
-var items = new string[fruits.Length];
-var j = 0;
-
-for (int i = 0; i < fruits.Length; i++)
-{
-    if (fruits[i].Contains("l"))
-    {
-        items[j] = fruits[i];
-        j++;
-    }
-}
-
-foreach (var item in items)
-{
-    Console.WriteLine(item);
-}
+Console.WriteLine(item); // cherry
 ```
 
 ## FindLast
-We can find the last item that meets a condition:
+We can find the **last** item that meets a condition:
 
 ``` csharp
 var fruits = new[] { "apple", "cherry", "pineapple", "plum" };
@@ -132,7 +94,7 @@ Console.WriteLine(item); // plum
 ```
 
 ## FindIndex
-Let's find the index of an item:
+Let's find the **index** of an item based on a condition:
 
 ``` csharp
 var fruits = new[] { "apple", "cherry", "pineapple", "plum" };
@@ -148,6 +110,29 @@ for (int i = 0; i < fruits.Length; i++)
 }
 
 Console.WriteLine(index); // 0
+```
+
+## FindAll
+We can also find **all** the items in an array that respect a certain condition:
+
+``` csharp
+var fruits = new[] { "apple", "cherry", "pineapple", "plum" };
+var result = new string[fruits.Length];
+var j = 0;
+
+for (int i = 0; i < fruits.Length; i++)
+{
+    if (fruits[i].Contains("p"))
+    {
+        result[j] = fruits[i];
+        j++;
+    }
+}
+
+foreach (var item in result)
+{
+    Console.WriteLine(item);
+}
 ```
 
 ## Reverse
@@ -166,6 +151,20 @@ foreach (var item in result)
 {
     Console.WriteLine(item);
 }
+```
+
+## Copy
+Let's copy the **items** of one array to another:
+
+``` csharp
+var fruits = new[] { "apple", "cherry", "pineapple", "plum" };
+var result = new string[fruits.Length];
+
+for (int i = 0; i < fruits.Length; i++)
+    result[i] = fruits[i];
+
+foreach (var fruit in result)
+    Console.WriteLine(fruit);
 ```
 
 ## Next
