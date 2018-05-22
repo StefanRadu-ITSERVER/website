@@ -35,7 +35,7 @@ With your help, I can continue providing programmers around the world with the b
 
 ## Concepts
 
-So far, I have beginners videos and posts about:
+So far, I have Beginners tutorials about:
 - C#
 - Visual Studio
 
