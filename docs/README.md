@@ -23,7 +23,7 @@ I am a passionate developer who longs to share his knowledge with others :D
 
 This website contains all the posts that I use for my [YouTube channel](https://www.youtube.com/channel/UCPIe87uLDW-QZ5FnUZqdxoA).
 
-You can drop me an email at: [daniel@danielsimionescu.com](mailto:daniel@danielsimionescu.com)
+You can drop me an email at: [danielsimionescu1996@gmail.com](mailto:danielsimionescu1996@gmail.com)
 
 <!-- ## Donation Link
 
