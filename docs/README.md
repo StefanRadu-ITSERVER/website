@@ -33,10 +33,15 @@ If you think that my work helps you, consider supporting me through a donation :
 
 With your help, I can continue providing programmers around the world with the best resources. -->
 
+## Concepts
+
+So far, I have beginners videos and posts about:
+- C#
+- Visual Studio
+
 ## Made with VuePress
 This entire website was made with [VuePress](https://vuepress.vuejs.org/) – [Vue.js](https://github.com/vuejs/vue), [Webpack](https://github.com/webpack/webpack) & [Markdown](https://github.com/markdown-it/markdown-it). <br>
 Thanks, [Evan You](https://github.com/yyx990803)! :)
 
 ## Contribution
 If you find any problems or mistakes, feel free to contribute to this website through [GitHub](https://github.com/danielsimionescu/website). You can make a `pull request` and I can approve it :+1:
-
