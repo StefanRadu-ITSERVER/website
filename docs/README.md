@@ -43,6 +43,7 @@ So far, I have tutorials about:
 ## Codementor
 
 If you need help with your project, I am available on Codementor
+
 [![Book session on Codementor](https://cdn.codementor.io/badges/book_session_github.svg)](https://www.codementor.io/danielsimionescu1996?utm_source=github&utm_medium=button&utm_term=danielsimionescu1996&utm_campaign=github)
 
 ## Made with VuePress
