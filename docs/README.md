@@ -35,9 +35,15 @@ With your help, I can continue providing programmers around the world with the b
 
 ## Concepts
 
-So far, I have **Beginner Tutorials** about:
+So far, I have tutorials about:
 - C#
+- JavaScript
 - Visual Studio
+
+## Codementor
+
+If you need help with your project, I am available on Codementor
+[![Book session on Codementor](https://cdn.codementor.io/badges/book_session_github.svg)](https://www.codementor.io/danielsimionescu1996?utm_source=github&utm_medium=button&utm_term=danielsimionescu1996&utm_campaign=github)
 
 ## Made with VuePress
 This entire website was made with [VuePress](https://vuepress.vuejs.org/) – [Vue.js](https://github.com/vuejs/vue), [Webpack](https://github.com/webpack/webpack) & [Markdown](https://github.com/markdown-it/markdown-it). <br>
