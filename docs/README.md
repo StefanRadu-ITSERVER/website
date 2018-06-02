@@ -51,4 +51,6 @@ This entire website was made with [VuePress](https://vuepress.vuejs.org/) – [V
 Thanks, [Evan You](https://github.com/yyx990803)! :)
 
 ## Contribution
-If you find any problems or mistakes, feel free to contribute to this website through [GitHub](https://github.com/danielsimionescu/website). You can make a `pull request` and I can approve it :+1:
+If you find any problems or mistakes, feel free to contribute to this website through [GitHub](https://github.com/danielsimionescu/website). 
+
+You can make a `pull request` and I can approve it :+1:
