@@ -5,8 +5,8 @@ meta:
     content: YouTube
   - name: keywords
     content: coding programming tutorials C# learning
-actionText: Discover Tutorials →
-actionLink: /csharp/
+actionText: YouTube Channel
+actionLink: https://www.youtube.com/channel/UCPIe87uLDW-QZ5FnUZqdxoA
 features:
 - title: Tutorials
   details: Amazing tutorials about a wide range of programming languages C#, JavaScript, Python etc.
@@ -21,7 +21,7 @@ footer: Copyright © 2018 Daniel Simionescu
 
 I am a passionate developer who longs to share his knowledge with others :D 
 
-This website contains all the posts that I use for my [YouTube channel](https://www.youtube.com/channel/UCPIe87uLDW-QZ5FnUZqdxoA).
+This website contains all the posts that I use for my [YouTube channel](https://www.youtube.com/channel/UCPIe87uLDW-QZ5FnUZqdxoA)
 
 You can drop me an email at: [danielsimionescu1996@gmail.com](mailto:danielsimionescu1996@gmail.com)
 
@@ -32,13 +32,6 @@ If you think that my work helps you, consider supporting me through a donation :
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com)
 
 With your help, I can continue providing programmers around the world with the best resources. -->
-
-## Concepts
-
-So far, I have tutorials about:
-- C#
-- JavaScript
-- Visual Studio
 
 ## Codementor
 
