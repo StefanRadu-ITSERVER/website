@@ -1,7 +1,4 @@
----
-title: Arrays in C#
----
-# Arrays in C#
+# Definition 
 
 ## What are arrays?
 Arrays are actually objects :thinking:.
@@ -24,13 +21,11 @@ var sum = nr1 + nr2 + nr3;
 Console.WriteLine(sum);
 ```
 
-## Usage
-
 This works well, but what happens if we have `10` numbers? What about something crazy like `75268` numbers?
 Imagine how many variables you need to write! :astonished:
 
 ![Scared dog](https://media.giphy.com/media/51Uiuy5QBZNkoF3b2Z/giphy-downsized-large.gif)
-<br>
+
 [Giphy](https://giphy.com/gifs/mrw-boy-51Uiuy5QBZNkoF3b2Z)
 
 This is where `arrays` kick in. Let's rewrite the program with an array instead:

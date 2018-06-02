@@ -1,7 +1,3 @@
----
-title: Object initializer
----
-
 # Object initializer
 
 We can declare, assign and initialize the array at once to avoid writing assignments as separate operations. 
@@ -9,7 +5,7 @@ We can declare, assign and initialize the array at once to avoid writing assignm
 This is where the **object initializer** shines: 
 
 ![Shining](https://media.giphy.com/media/3VSM58Eu7kR4A/giphy.gif)
-<br>
+
 [Gihpy](https://giphy.com/gifs/3VSM58Eu7kR4A)
 
 ``` csharp
@@ -85,6 +81,4 @@ foreach(var fruit in fruits)
 
 ## Conclusion
 
-This is how you initialize arrays in C#. 
-
-I will continue with **methods**. ;)
+This is how you initialize arrays in C#. :star2:

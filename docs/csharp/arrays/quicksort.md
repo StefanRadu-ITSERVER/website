@@ -5,16 +5,21 @@ title: Quicksort
 ## Quicksort
 
 ::: warning
-This is just a demonstration of the `Quicksort` algorithm. `.NET` comes shipped with a sorting method for arrays `Array.Sort`. See **here** my experiement comparing the following algorithm with Microsoft's.
+This is just a demonstration of the `Quicksort` algorithm. 
+
+**.NET** comes shipped with a sorting method for arrays called `Array.Sort()`. 
+
+See **here** my experiment comparing the following algorithm with Microsoft's.
 :::
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-Let's start simple with an array of integers which we want to sort:
+Let's start with an array of integers:
 ```csharp
 var numbers = new[] { 1, 5, 0, 34, 3, 9 };
 ```
 
-And let's just display the array to the console:
+Which we display to the console:
 ```csharp
 foreach (var number in numbers)
 {
@@ -22,7 +27,26 @@ foreach (var number in numbers)
 }
 ```
 
-So, what I want is a function called `SortArray` to which I can pass my array (we could make this an extension method as well if you so desire). Press `Ctrl` and `.` to generate the method. And I am going to do the same for a `Quicksort` function to which I pass the beginning and the end of the array besides itself as arguments.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+Let's create a function called `SortArray` to which we can pass this array (we could make this as an **extension method** if we so desire). 
+
+Nevertheless, press `Ctrl` and `.` to generate the function. 
+
+```csharp
+private static void SortArray(int[] numbers)
+{
+
+}
+```
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+Inside it, I am going to call a `Quicksort` function to which I pass:
+- the array
+- the beginning of the array
+- the end of the array
+
 ```csharp
 private static void SortArray(int[] numbers)
 {
@@ -35,17 +59,27 @@ private static void Quicksort(int[] numbers, int left, int right)
 }
 ```
 
-So, this is how we want it to be: to have functions that do isolated things.
+::: tip Clean Code
+This is a good coding practice: to have functions that implement isolated things.
+:::
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-And now, we can implement the Quicksort algorithm. I must say that I don't know this by heart and you shouldn't either. You can return to this resource anytime you want to implement a Quicksort. This is the implementation:
+## Implementation
+
+Now, we can implement the **Quicksort** algorithm. 
+
+I must say that I don't know this by heart and you shouldn't either. 
+
+You can return to this resource anytime you want to implement a **Quicksort**.
+
 ``` csharp
 private static void Quicksort(int[] numbers, int left, int right)
 {
     int i = left;
     int j = right;
 
-    var pivot = numbers[left + (right - left) / 2];
+    var pivot = numbers[(left + right) / 2];
 
     while(i <= j)
     {
@@ -74,16 +108,21 @@ private static void Quicksort(int[] numbers, int left, int right)
 }
 ```
 
-Watch the video if you want to hear thorough explanation: **link**.
+So, the array is sorted ;)
 
-Nevertheless, the array is sorted ascendingly ;)
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-### Conclusion
 
-Now, you might want to sort and array of `char` values, `strings` or even your own objects. Well, this won't work because it is for integers only, but with the **power** of **Generics** we can – coming up next.
+## Conclusion
+
+Now, you might want to **sort** arrays of type `char`, `string` or even a **custom object**. 
+
+Well, these functions **won't** work because they are only for **integers**, but with the power of **Generics** they can – which is coming up next. :D
 
 <!-- ![Baby power](https://media.giphy.com/media/KTXX5iczlM1zi/giphy-downsized-large.gif) -->
 
 ::: tip Generics
-Generics offer an amazing code reusability feature. Great to write less code.
+Generics offer amazing code **reusability** (great to write **less** code).
 :::
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

@@ -27,4 +27,5 @@ These are the drawbacks for arrays:
 ## Bye 
 Thanks for reading :D
 
-<!-- ![Nick bye](https://media.giphy.com/media/19zbJkzHgNsA/giphy.gif) -->
+[Giphy](https://giphy.com/gifs/swag-nick-jonas-19zbJkzHgNsA)
+![Nick bye](https://media.giphy.com/media/19zbJkzHgNsA/giphy.gif)

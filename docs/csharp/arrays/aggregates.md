@@ -1,8 +1,4 @@
----
-title: Aggregate Functions
----
-
-# Arrays
+# Aggregate Functions
 
 We are going to see how to calculate the `sum`, `average`, `min` and `max` for an array of prices.
 
@@ -14,10 +10,7 @@ I am going to show two ways:
 I provided the procedural examples for you to understand what kind of things happen under the hook (these are also good **exercises** :muscle:).
 :::
 
-<!-- ![Gym exercise](https://media.giphy.com/media/MnrYw86as4iwo/giphy.gif) -->
-
 In general in real world projects, you write procedural code only in **edge cases** when it's necessary.
-
 
 ## Exercise
 We are going to use an array of **prices** for our example. The type of the array is inferred as `double` because we have numbers with decimal points.
@@ -40,6 +33,7 @@ Console.WriteLine(sum);
 ```
 
 But the array provides us with the `Sum` method which we can call directly:
+
 ``` csharp
 var sum = prices.Sum();
 Console.WriteLine(sum);
@@ -59,6 +53,7 @@ Console.WriteLine(average);
 ```
 
 But, again, the array exposes the `Average` method which comes in handy:
+
 ``` csharp
 var average = prices.Average();
 Console.WriteLine(average);
@@ -107,6 +102,3 @@ And we have the same thing for `Max`:
 var max = prices.Max();
 Console.WriteLine(max);
 ```
-
-## Next
-Let's read the final opinion on arrays.

@@ -1,7 +1,3 @@
----
-title: ArrayList
----
-
 # ArrayList
 
 Let's talk about the `ArrayList` class for a moment. 
@@ -40,6 +36,6 @@ It is recommended to use the `List` collection for **Generics** or the `List<Obj
 ::: tip
 Still, the `ArrayList` is there for you as any other features of the C# language. 
 
-If you come across a situation when you think it make sense to use an `ArrayList`, go ahead and use it, but make sure you are aware of any **performance issues** that it might cause.
+If you come across a situation when you think it make sense to use an `ArrayList`, go ahead and use it, but make sure you are aware of any **performance issues** that it might cause. :fire:
 :::
 

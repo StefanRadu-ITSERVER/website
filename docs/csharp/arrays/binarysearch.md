@@ -1,8 +1,4 @@
----
-title: Binary Search
----
-
-# Search Algorithms
+# Binary Search
 
 ::: tip
 You don't have to implement this yourself, you can use the built-in method showed [here](/csharp/arrays/methods.html#array-binarysearch).
@@ -12,7 +8,7 @@ In order to `Binary Search` an array, it has to be sorted. You can simply use th
 
 If you are curious how to sort arrays, then check this [post](/csharp/arrays/quicksort.md).
 
----
+## Implementation
 
 Let's create an array with numbers and sort it:
 
@@ -39,6 +35,7 @@ private static int LinearSearch(int[] array, int item)
 ```
 
 And let's call it to find the position of value `3`:
+
 ``` csharp
 var index = LinearSearch(numbers, 3);
 Console.WriteLine(index);
@@ -76,17 +73,16 @@ private static int BinarySearch(int[] array, int item)
 ```
 
 And we call to search the same value:
-``` csharp
 
-      var index = BinarySearch(numbers, 3);
-            Console.WriteLine(index);
+``` csharp
+var index = BinarySearch(numbers, 3);
+Console.WriteLine(index);
 ```
 
 ## Recursion
 
 But there is a quote:
 > To iterate is human, to recurse divine (L Peter Deutsch)
-
 
 We need to be smarter :smirk:
 
@@ -129,7 +125,6 @@ Console.WriteLine(index);
 ```
 
 ## Summary
-So, this is `Binary Search`. ;)
+So, this is **Binary Search**. ;)
 
-You can find the source code [here](https://github.com/danielsimionescu/csharp-binarysearch).
-
+You can find the source code on [GitHub](https://github.com/danielsimionescu/csharp-binarysearch).

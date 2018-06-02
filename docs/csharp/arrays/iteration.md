@@ -25,7 +25,7 @@ The array exposes the `Count()` method as well, but the `Length` property is fas
 ## Iteration
 We can use the `for` loop to iterate, or we can just use `foreach`.
 
-### `for` loop
+### for loop
 1. using the `for` loop:
 ``` csharp
 for (int i = 0; i < fruits.Length; i++)
@@ -34,7 +34,7 @@ for (int i = 0; i < fruits.Length; i++)
 }
 ```
 
-### `foreach` loop
+### foreach loop
 2. using the `foreach` loop:
 ``` csharp
 foreach (var fruit in fruits)
@@ -59,7 +59,7 @@ Press enter to stop execution.
 Pretty nice :)
 
 ![Michelle nice](https://media.giphy.com/media/AGOPaltgJ2pBC/giphy.gif)
-<br>
+
 [Giphy](https://giphy.com/gifs/thumbs-up-michelle-obama-cool-story-bro-AGOPaltgJ2pBC)
 
 ::: tip Loops
@@ -122,4 +122,3 @@ The compiler just doesn't print `null` to the console. It prints nothing, but we
 Amazing, you know about **default values** and **looping** over arrays.
 
 I am going to cover all the other **default values** soon, so keep an eye on my [channel](https://www.youtube.com/channel/UCPIe87uLDW-QZ5FnUZqdxoA) and on this website :upside_down_face:
-

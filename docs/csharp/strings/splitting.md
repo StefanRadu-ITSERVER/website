@@ -1,9 +1,7 @@
----
-title: Splitting
----
+# Splitting
+We can split any string into separate parts based on a specified character. 
 
-## Splitting by characters
-We can split any string into separate parts based on a specified character. The `Split` method returns an array.
+The `Split` method returns an array as the result:
 
 ``` csharp
 var list = "coconut,melon,avocado";
@@ -15,10 +13,11 @@ foreach (var fruit in fruits)
 }
 ```
 
-<!-- ![Watermelon](https://media.giphy.com/media/TQI4MzZIoHBcs/giphy-downsized-large.gif) -->
+![Watermelon](https://media.giphy.com/media/TQI4MzZIoHBcs/giphy-downsized-large.gif)
 
+If there are empty items in the resulting array, we can remove them. 
 
-If there are empty items in the resulting array, we can remove them. Notice that we added a new array for specifying the separators / delimiters.
+Notice the new array for the separators / delimiters.
 
 ``` csharp
 var list = "coconut,,melon,avocado,";
@@ -31,7 +30,7 @@ foreach (var fruit in fruits)
 }
 ```
 
-### Splitting in `n` parts
+## In N parts
 
 We can set the maximum number of substrings which will be returned:
 
@@ -54,9 +53,10 @@ coconut
 If you want, you can add `StringSplitOptions.RemoveEmptyEntries` because there is an overload for it.
 :::
 
-## Splitting by strings
+## By strings
 
 Instead of a simple character `char`, we can have strings as delimiters, but we need to specify the splitting options (in this case `None`):
+
 ``` csharp
 var list = "strawberry,blueberry,raspberry";
 var stringSeparators = new string[] { "berry" };

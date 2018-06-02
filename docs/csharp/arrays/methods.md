@@ -1,11 +1,7 @@
----
-title: Methods
----
-
-## C# Array Methods
+# Methods
 We are going to see the top `10` most important methods provided by the `Array` class.
 
-### `Array.IndexOf()`
+## IndexOf
 This returns the **index** of an item inside the array – in our case `2` for lemon :lemon:
 
 ``` csharp
@@ -16,7 +12,7 @@ var result = Array.IndexOf(fruits, "lemon");
 Console.WriteLine(result); // 2
 ```
 
-### `Array.Exists()`
+## Exists
 It checks to see whether or not an item **exists** in an array (this accepts a `Predicate`):
 
 ``` csharp
@@ -27,7 +23,7 @@ var result = Array.Exists(fruits, fruit => fruit.Contains("l"));
 Console.WriteLine(result);
 ```
 
-### `Array.Find()`
+## Find
 This simply **finds** an item in an array:
 
 ``` csharp
@@ -38,7 +34,7 @@ var result = Array.Find(fruits, fruit => fruit.Contains("l"));
 Console.WriteLine(result);
 ```
 
-### `Array.FindLast()`
+## FindLast
 As the `Find` method, but this starts from the **end** of the array:
 
 ``` csharp
@@ -49,7 +45,7 @@ var result = Array.FindLast(fruits, fruit => fruit.Contains("l"));
 Console.WriteLine(result);
 ```
 
-### `Array.FindIndex()`
+## FindIndex
 We can also find the **index** of an item by using a `Predicate`:
 
 ``` csharp
@@ -60,7 +56,7 @@ var result = Array.FindIndex(fruits, fruit => fruit.Contains("l"));
 Console.WriteLine(result);
 ```
 
-### `Array.FindAll()`
+## FindAll
 We can find **all** the items that pass a certain condition:
 
 ``` csharp
@@ -74,7 +70,7 @@ foreach (var fruit in result)
 }
 ```
 
-### `Array.Reverse()`
+## Reverse
 We can **reverse** the items in an array:
 
 ``` csharp
@@ -88,7 +84,7 @@ foreach (var fruit in fruits)
 }
 ```
 
-### `Array.Copy()`
+## Copy
 We can copy the items of an array to another one. 
 
 The third argument is to specify **how many items** you want to copy:
@@ -104,7 +100,7 @@ Array.Copy(fruits, fruits2, 2);
 To copy all the items, just pass `fruits.Length` as the third argument.
 :::
 
-### `Array.Sort()`
+## Sort
 And one of the most important things is to **sort** an array:
 
 ``` csharp
@@ -144,7 +140,7 @@ foreach (var fruit in fruits)
 }
 ```
 
-### `Array.BinarySearch()`
+## BinarySearch
 You can **search** for an element in a **sorted** array (make sure to sort the array in **ascending order** before applying this algorithm):
 
 ``` csharp
@@ -163,5 +159,5 @@ else
 If an array contains duplicate elements (which have the same value), then `BinarySearch` will return the index of one of those elements.
 :::
 
-### Next
+## Next
 If you are interested how to implement these methods procedurally (reinventing the wheel), that's coming up next ;)

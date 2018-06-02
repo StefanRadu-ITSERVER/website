@@ -1,8 +1,4 @@
----
-title: Resize
----
-
-### `Array.Resize()` method
+# Resize
 There is a method called `Array.Resize` which might do what it expresses through its name: to resize (change the **size**) of the array. But we said that arrays are **immutable** :fearful:. 
 
 

@@ -1,8 +1,4 @@
----
-title: Procedural Functions
----
-
-## Methods – Procedurals
+# Procedurals
 
 I am going to show you how to **procedurally** implement the **array methods** listed [here](/csharp/arrays/methods.md)
 
@@ -33,7 +29,7 @@ Once you find the item you are looking for, you can __STOP__ the execution to ma
 :::
 
 ![Stop sign](https://media.giphy.com/media/EQZnVtaNxwLyo/giphy.gif)
-<br>
+
 [Giphy](https://giphy.com/gifs/woman-stop-weather-EQZnVtaNxwLyo)
 
 ## Exists
@@ -167,6 +163,6 @@ foreach (var fruit in result)
     Console.WriteLine(fruit);
 ```
 
-## Next
+## Up Next
 
 I have `8` so far, but in this [post](/csharp/arrays/methods.md), there were `10`. Well, **sorting** and **searching** are more complex and they deserve separate posts.  :sweat:

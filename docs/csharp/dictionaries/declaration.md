@@ -1,12 +1,7 @@
----
-title: C# Dictionaries
----
-
-# Dictionaries in C#
+# Declaration
 
 I am going to create a store variable of type `Dictionary` which holds the kilograms of fruit that we have in store for each fruit type.
 
-## Declaration:
 We can create a `Dictionary` like so:
 
 ``` csharp
@@ -25,6 +20,8 @@ store.Add("grape", 14.8);
 
 ::: tip
 The `Key` is first, the `Value` is second.
+
+This is the power of dictionaries: they allow you to associate unique keys with values.
 :::
 
 ## Object initializers

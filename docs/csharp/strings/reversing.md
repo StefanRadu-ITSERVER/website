@@ -1,15 +1,12 @@
----
-title: Reversing
----
-
-## `Reverse` method
-There are a couple of ways to reverse a string. 
+# Reversing
+There are a couple of ways to reverse a string.
 
 I am going to show you one procedural way and a built-in method.
 
-### Procedural way
+## Procedural way
 
 By using the `for` loop and going backwards:
+
 ```csharp
 var text = "Reversing strings is easy";
 
@@ -19,7 +16,9 @@ for (var i = 0; i < text.Length; i++)
     Console.Write(character); // ysae si sgnirts gnisreveR
 }
 ```
+
 But this prints the result only. 
+
 We might want to save it in an array:
 
 ``` csharp
@@ -35,14 +34,14 @@ for (var i = 0; i < text.Length; i++)
 Console.WriteLine(textReversedAsArray);
 ```
 
-You can transform the array to a string:
+Finally, we can transform the array to a string:
 
 ``` csharp
 var textReversed = new string(textReversedAsArray);
 Console.WriteLine(textReversed);
 ```
 
-### Built-in way
+## Built-in way
 By using the `Reverse` and `ToArray` methods:
 
 ``` csharp

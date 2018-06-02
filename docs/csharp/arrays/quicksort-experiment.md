@@ -2,6 +2,8 @@
 
 Now, you might been thinking: _"should I use [this](/csharp/arrays/quicksort-generics.md) algorithm to sort my arrays?"_. Well, yes if you want that, but `.NET` comes shipped with a sorting method for arrays: `Array.Sort()`.
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 ## `Array.Sort`
 
 `Array.Sort` uses the **introspective sort** which is a combination of:
@@ -16,6 +18,9 @@ So, use `Array.Sort`. You don't have to implement anything and it's much faster 
 Don't trust me? Let's experiment it ;)
 
 <!-- ![Experiment](https://media.giphy.com/media/FMCC4QgBQTBPG/giphy.gif) -->
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ---
 
@@ -42,6 +47,9 @@ I will create `2` million numbers ranging from `0` to `500` (there are so many d
 var numbers = RandomNumbers(2000000, 0, 500);
 ```
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 I will create a new `Stopwatch` to check how much time it takes. I will start it before sorting and then stop it after sorting the array, then I will print the time:
 
 ``` csharp
@@ -56,6 +64,9 @@ Console.WriteLine($"\nTime with Array.Sort: {time}ms");
 And it took `365ms` to sort. 
 
 That's good, I guess  :confused:, but let's compare this with the built-in function in C#. 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 I will copy all the random numbers into another array because I want to have the same numbers to work with. And then, I will just use the same `StopWatch` to track both intervals:
 
@@ -77,6 +88,9 @@ time = watch.ElapsedMilliseconds;
 Console.WriteLine($"\nTime with Array.Sort: {time}ms");
 ```
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 Here's the result:
 ```
 Time with SortArray: 362ms
@@ -85,6 +99,9 @@ Time with Array.Sort: 145ms
 ```
 
 Well, not even close, more than twice that time, more exactly `2.496...` times more.
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ### Refactoring
 
@@ -109,6 +126,9 @@ PrintExecutionTime(() => SortArray(numbers));
 PrintExecutionTime(() => Array.Sort(copy));
 ```
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 ## Conclusion
 
 So, as I said, the `Array.Sort` is more optimized and uses three different sorting algorithms. 
@@ -119,5 +139,8 @@ You can find the source code on
 [GitHub](https://github.com/danielsimionescu/csharp-quicksort-experiment).
 
 See you guys ;)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 <!-- ![Bye](https://media.giphy.com/media/GB0lKzzxIv1te/giphy.gif) -->

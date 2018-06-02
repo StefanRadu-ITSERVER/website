@@ -1,5 +1,8 @@
-## String literals
-Tehre are same sequences that you can insert inside strings to create a new line, or to add a tab. These are: \n, \t, \r, \\ etc.
+# String Literals
+
+There are same **sequences** that you can insert inside strings to create a new line, or to add a tab. 
+
+These are: `\n`, `\t`, `\r`, `\\` etc.
 
 ``` csharp
 string columns = "Column 1\tColumn 2\tColumn 3";
@@ -11,17 +14,19 @@ Console.WriteLine(rows);
 
 These are also called **escape characters**.
 
+## Multiline Strings
 
-### How to create a multiline string?
+To create a multiline string, we can use the **verbatim operator** `@`:
 
-We can use the **verbatim operator**.
 ``` csharp
 var text = @"This is a text
 on multiple
 lines";
 ```
 
-Also, we can use this to not repeat ourselves when we want to insert backslash characters, or quotes in strings:
+Also, we can use this to not repeat ourselves when we want to insert backslash characters, or quotes in strings.
+
+So, we can write:
 
 ``` csharp
 string filePath = @"C:\Users\Public\Documents";
@@ -33,4 +38,4 @@ instead of:
 string filePath = "C:\\Users\\Public\\Documents";
 ```
 
-This operator is very convenient. :)
+This operator is very convenient. :wink:

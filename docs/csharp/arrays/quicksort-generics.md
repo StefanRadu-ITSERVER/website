@@ -1,10 +1,13 @@
 ## Generic Quicksort
 
-So, I am going to make the `Quicksort` method from this [post](/csharp/arrays/quicksort.md) generic.
+I am going to make the `Quicksort` method from this [post](/csharp/arrays/quicksort.md) Generic:
+- use the `T` type, 
+- add the condition that it must implement the `IComparable` interface 
+- make use of the `CompareTo` method
+- rename the `numbers` parameter to `array`.
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-
-First, we need to use the `T` type, then add the condition that the type must implement the `IComparable` interface and make use of the `CompareTo` method:
 
 ``` csharp
 private static void Quicksort<T>(T[] array, int left, int right) where T : IComparable<T>
@@ -41,9 +44,10 @@ private static void Quicksort<T>(T[] array, int left, int right) where T : IComp
 }
 ```
 
-Also, I renamed the `numbers` parameter to `array`.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-I will do the same for the `SortArray` function:
+
+Rename the array in the other function as well:
 
 ``` csharp
 private static void SortArray<T>(T[] array) where T : IComparable<T>
@@ -51,6 +55,9 @@ private static void SortArray<T>(T[] array) where T : IComparable<T>
     Quicksort(array, 0, array.Length - 1);
 }
 ```
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 And that's it :D It works again with numbers. Let's create two more arrays: one with `chars` one with `strings`:
 
@@ -67,6 +74,9 @@ SortArray(letters);
 SortArray(names);
 ```
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 To keep our code DRY, I want to extract the "print array" code to another function:
 
 <!-- ![Raisins](https://media.giphy.com/media/unVuwnL0UyHUk/giphy.gif) -->
@@ -82,6 +92,9 @@ public static void PrintArray<T>(T[] array)
 }
 ```
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 We can now display the content of the arrays like this:
 
 ``` csharp
@@ -90,6 +103,9 @@ PrintArray(letters);
 PrintArray(names);
 ```
 And this works wonders :D
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ### Custom class
 
@@ -121,6 +137,9 @@ class Book : IComparable<Book>
 }
 ```
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 Then, I am going to create an array of books. I won't create a proper ISBN, just some dumb ones:
 
 ``` csharp
@@ -130,6 +149,8 @@ var books = new[] { new Book("4ds"), new Book("2er"), new Book("31") };
 ::: tip
 My intent is to show you how to implement `IComparable` and how to think about it. This interface isn't that difficult and using it is a breeze.
 :::
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 Then we can just sort it and display it:
@@ -146,6 +167,10 @@ Wonderful :)
 You can find the source code on
 [GitHub](https://github.com/danielsimionescu/csharp-quicksort).
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 ### Conclusion
 But should we use this approach? I don't recommend so. Let's see why in our next experiment.
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

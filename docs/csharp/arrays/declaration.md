@@ -1,7 +1,3 @@
----
-title: Adding Items
----
-
 # Adding items
 
 Let's see how we can add items to arrays in C#.
@@ -89,8 +85,6 @@ Still, there are many use cases for the arrays and we don't just throw them in t
 
 Maybe, in some scenarios this is the exact behaviour that what we want :smiley:
 :::
-
----
 
 We can remove that line and try to display the values:
 

@@ -1,10 +1,4 @@
----
-title: String Methods
----
-
 # String Manipulation
-
-## 15 String Methods Explained in under X minutes
 
 We are going to see some useful methods that can be used on `String` objects.
 To illustrate the methods, we can use this variable as our example:
@@ -13,17 +7,20 @@ var text = "It's a cold day in the woods";
 ```
 
 
-## `Substring()` method
+## Substring
 This method returns a brand-new string with the value: "a cold day"
+
 ``` csharp
 var subtext = text.Substring(5, 10);
 Console.WriteLine(subtext);
 ```
+
 So, we can get only a part of a `string`.
 
 
-## `Join()` method
+## Join
 We can create a new string based on an array of values and a separator.
+
 ``` csharp
 var numbers = new[] { 1, 2, 3, 4, 5 };
 
@@ -31,23 +28,23 @@ var result = string.Join(",", numbers);
 Console.WriteLine(result);
 ```
 
-
-
-
-## `Concat()` method
+## Concat
 We can combine two string together. If we run just this line:
+
 ``` csharp
 string.Concat(text, " of the village");
 Console.WriteLine(text);
 ```
 
 The value of the text variable doesn't change (we know that the string is immutable). Therefore, we need to reassign the new value:
+
 ``` csharp
 text = string.Concat(text, " of the village");
 Console.WriteLine(text);
 ```
 
 Instead of `string.Concat()`, we can use the plus operator `+` to combine strings together.
+
 ``` csharp
 text += " of the village";
 Console.WriteLine(text);
@@ -56,15 +53,12 @@ This operator is called the **concatenation operator**.
 
 ::: tip + operator
 The compiler is smart enough to tell that when you use the `+` operator with strings, you mean that you want it to combine them togheter. With integers, it performs addition. 
-<br>
+
 The compiler is **dope**.
 :::
-<!-- ![Dope girl](https://media.giphy.com/media/Zy2H3rtcczV96/giphy.gif) -->
+![Dope girl](https://media.giphy.com/media/Zy2H3rtcczV96/giphy.gif)
 
-
-
-
-## `Replace()` method
+## Replace
 We can replace any string occurance inside of a string:
 ``` csharp
 text = text.Replace("cold", "warm");
@@ -74,29 +68,27 @@ This works the same as the `string.Concat()` method: it returns a new string. We
 
 Like the `Substring` method, `Replace` actually returns a new string and does not modify the original string.
 
-
-## `ToUpper()` method
+## ToUpper
 We can transform all the characters of a string to upper case:
 ``` csharp
 text = text.ToUpper();
 Console.WriteLine(text);
 ```
 
-## `ToLower()` method
+## ToLower
 ``` csharp
 text = text.ToLower();
 Console.WriteLine(text);
 ```
 
-
-## `Insert()` method
+## Insert
 We can insert another sequence inside of a string:
 ``` csharp
 text = text.Insert(12, "foggy ");
 Console.WriteLine(text);
 ```
 
-## `IndexOf()` method
+## IndexOf
 We can find the starting index of a specific string inside another one:
 ``` csharp
 var index = text.IndexOf("warm");
@@ -107,14 +99,14 @@ If the method returns a negative index (-1), then it means that there is no such
 :::
 
 
-## `Length` property
+## Length
 We can get the length / size of a string through the Length property:
 ``` csharp
 var length = text.Length;
 Console.WriteLine(length);
 ```
 
-## `Contains` method
+## Contains
 We can use the `Contains` method to check if there is a string in another one:
 ``` csharp
 if (text.Contains("warm"))
@@ -123,20 +115,31 @@ if (text.Contains("warm"))
 }
 ```
 
-## `Copy` method
+## Copy
 We can copy the value of one string to another one:
+
 ``` csharp
 var anotherText = string.Copy(text);
 Console.WriteLine(anotherText);
 ```
 
 ## StartsWith
+This method checks whether or not a string **starts with** another one:
+
+``` csharp
+var result = text.StartsWith("It's a");
+Console.Writeline(result); // True
+```
 
 ## EndsWith
+This performs in the opposite way of `StartsWith`:
 
+``` csharp
+var result = text.StartsWith("in the woods");
+Console.Writeline(result); // True
+```
 
-
-## `Trim` method
+## Trim
 
 We can remove white-spaces from the beginning and end of a string with the `Trim` method:
 
@@ -150,6 +153,7 @@ Notice that this doesn't affect the white-spaces inside of the string.
 :::
 
 You can change how the `Trim` method works by providing a set of characters:
+
 ``` csharp
 var phoneNumber = ".232 323 232,";
 var chars = new char[] { '.', ',' };
@@ -157,8 +161,9 @@ phoneNumber = phoneNumber.Trim(chars);
 ```
 
 
-## `ToArray()` method
+## ToArray
 We can transform a string to an array:
+
 ``` csharp
 var textAsArray = text.ToArray();
 Console.WriteLine(textAsArray);
@@ -167,6 +172,7 @@ Console.WriteLine(textAsArray);
 
 ## Example
 Let's now use these methods to not guess where a string is, but to do it programmatically:
+
 ``` csharp
 var term = "warm";
 var position = text.IndexOf(term);
@@ -183,6 +189,7 @@ if (text.Contains("foggy"))
 ```
 
 To make the code cleaner, we can assign the value to a variable:
+
 ``` csharp
 term = "foggy";
 if (text.Contains(term))
@@ -193,8 +200,9 @@ if (text.Contains(term))
 Keep in mind that all the methods that appear/seem to change a string, in fact they return a new one. This can have huge perfomance issues which we will look at in a bit.
 :::
 
-
 ## Bye
-You can now have fun with these methods :sweat_smile:
+You can have fun with these methods :sweat_smile:
 
 ![Fun](https://media.giphy.com/media/FUhalvNbmECkg/giphy.gif)
+
+[Giphy](https://giphy.com/gifs/good-kid-try-FUhalvNbmECkg)

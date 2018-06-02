@@ -1,9 +1,12 @@
----
-title: Comparing
----
+# Comparison
+
+Let's compare some strings, shall we? :sweat_smile:
 
 ## Equality
-A string is a **reference type**. Even though, when you compare two strings to see if they are equal to each other, the compiler compares their values (just as **value types**):
+A string is a **reference type**. 
+
+Even though, when you compare two strings to see if they are equal to each other, the compiler compares their values (just as **value types**):
+
 ``` csharp
 var name = "Daniel";
 var secondName = "Daniel";
@@ -14,6 +17,7 @@ if (name == secondName) {
 ```
 
 Also, we can see if they are different with the `!=` operator:
+
 ``` csharp
 if (name != secondName) {
     // this is false
@@ -44,8 +48,10 @@ if (first.Equals(second, StringComparison.OrdinalIgnoreCase))
 So, for non-case-sensitive comparisons, use the equals method and pass a second argument of `OrdinalIgnoreCase`.
 
 
-## `Compare` method
-We can compare string as well. The `Compare` method compares the ASCII codes of each character.
+## Compare
+We can compare strings as well. :smile:
+
+The `Compare` method compares the **ASCII codes** of each character.
 
 ``` csharp
 var first = "break";
@@ -54,9 +60,3 @@ var second = "Break";
 if (String.Compare(first, second) < 0)
     Console.WriteLine("first");
 ```
-
-
-
-
-https://docs.microsoft.com/en-us/dotnet/standard/base-types/comparing
-https://docs.microsoft.com/en-us/dotnet/csharp/how-to/compare-strings
