@@ -1,4 +1,4 @@
-# Prime numbers
+# Prime Numbers
 
 A number is **prime** if it can be divided ONLY by `1` and by itself.
 

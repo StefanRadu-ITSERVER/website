@@ -1,4 +1,4 @@
-# switch statement
+# switch
 
 `switch` statements are easier to read than their representation in `if else` statements.
 

@@ -1,3 +1,5 @@
+# Intersection
+
 Let's say we have two arrays:
 
 ``` javascript

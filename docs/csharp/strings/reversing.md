@@ -49,9 +49,15 @@ var text = "Reversing strings is easy";
 
 var textReversedAsArray = (text.Reverse().ToArray());
 Console.WriteLine(textReversedAsArray);
+```
 
+As you can see, we can reverse the string in one line.
+
+Then we can transform it into a string:
+
+``` csharp
 var textReversed = new string(textReversedAsArray);
 Console.Write(textReversed);
 ```
 
-As you can see, we can reverse the string in one line and then we can transform it into a string.
+

@@ -4,7 +4,7 @@ This is an object that holds key-value pairs (similar to a `Dictionary` if you k
 Let's create a `map` object. This will contain fruit types and the associated quantity in kg for a store.
 
 ``` javascript
-  var store = new Map();
+var store = new Map();
 ```
 
 ## Adding items

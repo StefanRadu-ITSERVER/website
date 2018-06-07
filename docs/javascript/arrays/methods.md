@@ -1,4 +1,4 @@
-# Array methods
+# Methods
 
 Let's create an array:
 

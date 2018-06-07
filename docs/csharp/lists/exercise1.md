@@ -177,4 +177,3 @@ foreach (var phone in expensivePhones)
 ```
 
 In this way, if you intend to write more code to check for the same thing, you can reuse this function.
-

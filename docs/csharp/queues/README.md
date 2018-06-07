@@ -80,7 +80,8 @@ And this is the result:
 ```
 
 When a customer gets the products, we can call this:
-```
+
+``` csharp
 orders.Dequeue();
 ```
 

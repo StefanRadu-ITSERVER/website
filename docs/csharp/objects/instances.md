@@ -4,7 +4,7 @@ Let's create two instances of a `Car` class which has two properties: manufactur
 
 This is the `Car` class:
 
-``` cs
+``` csharp
 public class Car
 {
     public string Manufacturer { get; set; }
@@ -14,7 +14,7 @@ public class Car
 
 Now, we can create two instances of this class:
 
-``` cs
+``` csharp
 var porsche = new Car
 {
     Manufacturer = "Porsche",
@@ -30,13 +30,9 @@ var ferrari = new Car
 
 These two instances are pointing to a location in memory where the values are stored.
 
-If I do something like this:
+If I do something like this: `porsche = ferrari`, then, both the `porsche` and the `ferrari` variables point to the same location in memory (we have two **references** to the first object).
 
-``` cs
-porsche = ferrari;
-```
-
-Then, both the `porsche` and the `ferrari` variables point to the same location in memory (we have two **references** to the first object).
+Comparison
 
 objects - instances - references
 

@@ -5,10 +5,12 @@
 Let's calculate the total factors of a number:
 
 > A positive integer D is a factor of a positive integer N if there exists an integer M such that N = D * M.
+[Codility](https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/count_factors)
+
 
 I am going to declare a method called `CountFactors` which returns the total number of factors:
 
-``` cs
+``` csharp
 public static int CountFactors(int number)
 {
 
@@ -17,19 +19,19 @@ public static int CountFactors(int number)
 
 Now, we need a `counter` variable which counts the factors:
 
-``` cs
+``` csharp
 var counter = 0;
 ```
 
 Since factors come in pairs (of two obviously), we don't need to count for each of them separately. Because of that, we can check only for the numbers below the square root of the `number`:
 
-``` cs
+``` csharp
 var limit = (int)Math.Sqrt(number);
 ```
 
 If that `i` is a factor of the `number` (meaning the rest of the division is `0`), then we can increment the `counter` by `2` (remember: pair of factorials):
 
-``` cs
+``` csharp
 for (var i = 1; i <= limit; i++)
 {
     if (number % i == 0)
@@ -41,7 +43,7 @@ for (var i = 1; i <= limit; i++)
 
 Now, when the middle number is a factorial, then we don't need to increment the `counter` by two (this is the only case when it's only one). So, we need to decrement `1` separately if that's the case:
 
-``` cs
+``` csharp
 if (limit == Math.Sqrt(number))
 {
     counter--;
@@ -50,13 +52,13 @@ if (limit == Math.Sqrt(number))
 
 And then return the `counter`:
 
-``` cs
+``` csharp
 return counter;
 ```
 
 This is the full method:
 
-``` cs
+``` csharp
 public static int CountFactors(int number)
 {
     var counter = 0;
@@ -81,7 +83,7 @@ public static int CountFactors(int number)
 
 And we can call it for `24` and we get a correct result of `8`:
 
-``` cs
+``` csharp
 var result = CountFactors(24);
 Console.WriteLine(result); // 8
 ```
@@ -93,7 +95,7 @@ The **complexity** of this algorithm is `O(sqrt(N))`.
 
 In JavaScript, you need to:
 - replace
-``` cs
+``` csharp
 var limit = (int)Math.Sqrt(number);
 ```
 with
@@ -107,7 +109,7 @@ var limit = parseInt(Math.sqrt(number));
 
 Here's another solution, but it doesn't perform well with huge numbers:
 
-``` cs
+``` csharp
 public static int CountFactors(int number)
 {
     var i = 1;

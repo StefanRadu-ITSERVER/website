@@ -1,3 +1,5 @@
+# Features
+
 ## console.log
 
 We can print text to the console by using `console.log`:

@@ -8,7 +8,7 @@ So, let's serialize some bytes to a file:
 
 We start by creating a `FileStream`
 
-``` cs
+``` csharp
 using (var fileStream = new FileStream("data", FileMode.Create))
 
 }
@@ -42,13 +42,13 @@ Now, let's try to read the bytes from the file.
 
 Firstly, we need to set the beginning of the file:
 
-``` cs
+``` csharp
 fileStream.Seek(0, SeekOrigin.Begin);
 ```
 
 Then, we can use a `for` loop to read the bytes one by one again:
 
-``` cs
+``` csharp
 for (var i = 0; i < fileStream.Length; i++)
 {
     var number = fileStream.ReadByte();
@@ -58,7 +58,7 @@ for (var i = 0; i < fileStream.Length; i++)
 
 This is the whole code:
 
-``` cs
+``` csharp
 using (var fileStream = new FileStream("data", FileMode.Create))
 {
     // writing
@@ -66,7 +66,6 @@ using (var fileStream = new FileStream("data", FileMode.Create))
     {
         fileStream.WriteByte((byte)i);
     }
-
 
     // reading
     fileStream.Seek(0, SeekOrigin.Begin);
@@ -79,4 +78,6 @@ using (var fileStream = new FileStream("data", FileMode.Create))
 }
 ```
 
-Of course, you would have separated these in two functions, creating an array etc. But this is just to show how to serialize integers to bytes. :D
+Of course, you would have separated these in two functions, creating an array etc. 
+
+But this is just to show how to serialize integers to bytes. :D

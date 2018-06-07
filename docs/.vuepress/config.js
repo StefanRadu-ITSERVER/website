@@ -25,30 +25,36 @@ module.exports = {
           { text: "Tasks", link: '/csharp/tasks/' },
           { text: "TDD", link: '/csharp/testing/' },
           { text: "Byte Serialization", link: '/csharp/byteserialization' },
+          { text: "Namespaces", link: '/csharp/namespaces' },
+          { text: "Numbers", link: '/csharp/numbers' },
+          { text: "Value and reference", link: '/csharp/valueandreference' },
+          { text: "Tips", link: '/csharp/tips' },
         ]
       },
       {
         text: 'JavaScript',
         items: [
+          { text: "Basics", link: '/javascript/basics/' },
           { text: "Statements", link: '/javascript/statements/' },
           { text: "Variables", link: '/javascript/variables/' },
           { text: "Strings", link: '/javascript/strings/' },
-          { text: "Arrays", link: '/javascript/arrays/iteration' },
+          { text: "Arrays", link: '/javascript/arrays/' },
           { text: "Functions", link: '/javascript/functions/' },
           { text: "Regex", link: '/javascript/regex/' },
           { text: "ES6 – ES8", link: '/javascript/ecmascript/' },
           { text: "Maps", link: '/javascript/maps/' },
-          { text: "Procedural", link: '/javascript/procedural/' },
+          { text: "Procedural", link: '/javascript/procedurals/' },
           { text: "OOP", link: '/javascript/objectoriented/' },
           { text: "TypeScript", link: '/javascript/typescript/' },
           { text: "Functional", link: '/javascript/functional/' },
           { text: "Lodash", link: '/javascript/lodash/' },
           { text: "Vanilla JS", link: '/javascript/vanillajs/' },
-          { text: "Vue.js", link: '/javascript/vuejs/' }
+          { text: "Vue.js", link: '/javascript/vuejs/' },
+          { text: "Tips", link: '/javascript/tips' }
         ]
       },
       { text: 'Codementor', link: 'https://www.codementor.io/danielsimionescu1996' },
-      { text: 'PayPal', link: 'https://www.paypal.me/danielsimi'},
+      { text: 'PayPal', link: 'https://www.paypal.me/danielsimi' },
       { text: 'YouTube', link: 'https://www.youtube.com/channel/UCPIe87uLDW-QZ5FnUZqdxoA' },
     ],
     sidebar: {
@@ -137,6 +143,14 @@ module.exports = {
         'instances',
         'propertyinitializers'
       ],
+      '/csharp/structs/': [
+        '',
+        'declaration'
+      ],
+      '/csharp/tasks/': [
+        '',
+        'actions'
+      ],
       '/csharp/testing/': [
         '',
         'bankexercise',
@@ -146,8 +160,76 @@ module.exports = {
       ],
 
       // JAVASCRIPT
+      '/javascript/basics/': [
+        '',
+        'types',
+        'decimals',
+        'features',
+        'operators',
+        'random',
+        'swap'
+      ],
       '/javascript/arrays/': [
-        'iteration'
+        '',
+        'iteration',
+        'methods',
+        'intersection',
+      ],
+      '/javascript/ecmascript/': [
+        '',
+        'defaultparameters',
+        'arraydestructuring',
+        'objectdestructuring',
+        'iterators/',
+        'iterators/usage',
+        'iterators/customranges'
+      ],
+      '/javascript/statements': [
+        '',
+        'switch'
+      ],
+      '/javascript/functional/': [
+        '',
+        'comparison',
+        'higherorderfunctions'
+      ],
+      '/javascript/functions/': [
+        '',
+        'async',
+        'declaration'
+      ],
+      '/javascript/lodash/': [
+        '',
+        'map',
+        'filter',
+        'reduce',
+        'find',
+        'every',
+        'some'
+      ],
+      '/javascript/maps/': [
+        ''
+      ],
+      '/javascript/objectoriented/': [
+        '',
+        'inheritance',
+        'getset'
+      ],
+      '/javascript/procedurals/': [
+        '',
+        'divisors',
+        'primenumbers'
+      ],
+      '/javascript/regex/': [
+        '',
+        'capitalize'
+      ],
+      '/javascript/strings/': [
+        '',
+        'stringoperator',
+        'methods',
+        'templates',
+        'extra'
       ],
       '/javascript/typescript/': [
         '',
@@ -161,6 +243,21 @@ module.exports = {
         'restparameters',
         'tips',
         'types'
+      ],
+      '/javascript/vanillajs/': [
+        '',
+        'document',
+        'querying'
+      ],
+      '/javascript/variables/': [
+        '',
+        'declaration',
+        'scope'
+      ],
+      '/javascript/vuejs/': [
+        '',
+        'inputtrigger',
+        'customfilter'
       ],
 
       '/': [

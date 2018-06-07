@@ -1,4 +1,4 @@
-# Random numbers
+# Random Numbers
 
 Let's look at how to create random numbers in JavaScript.
 

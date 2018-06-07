@@ -1,4 +1,4 @@
-### slice
+### Slice
 
 We can remove end characters from a string by providing the `sclice` method with a negative number:
 
@@ -15,4 +15,3 @@ It is a sunny day in the fields of the Sh
 ```
 
 It removed `ire.`.
-

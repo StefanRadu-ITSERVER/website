@@ -1,3 +1,5 @@
+# Tips
+
 ## null types
 
 You can define a variable as `null` or `undefined`

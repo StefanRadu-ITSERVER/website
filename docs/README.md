@@ -9,11 +9,11 @@ actionText: YouTube Channel
 actionLink: https://www.youtube.com/channel/UCPIe87uLDW-QZ5FnUZqdxoA
 features:
 - title: Tutorials
-  details: Amazing tutorials about a wide range of programming languages C#, JavaScript, Python etc.
+  details: Amazing tutorials about a wide range of programming languages, frameworks and tools
 - title: Free
-  details: I am supporting free education and I believe that everyone should have access to great resources.
+  details: I support free education and I believe that everyone should have access to great resources
 - title: Up-to-date
-  details: I make continual effort to keep this website up-to-date with the latest technology trends.
+  details: I make continual effort to keep this website up-to-date with the latest technology trends
 footer: Copyright © 2018 Daniel Simionescu
 ---
 
@@ -35,7 +35,7 @@ With your help, I can continue providing programmers around the world with the b
 
 ## Codementor
 
-If you need help with your project, I am available on Codementor
+If you need a 1:1 session, or just some help with your project, I am available on Codementor
 
 [![Book session on Codementor](https://cdn.codementor.io/badges/book_session_github.svg)](https://www.codementor.io/danielsimionescu1996?utm_source=github&utm_medium=button&utm_term=danielsimionescu1996&utm_campaign=github)
 

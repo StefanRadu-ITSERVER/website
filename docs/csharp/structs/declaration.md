@@ -1,3 +1,5 @@
+# Declaration
+
 Let's create a struct type.
 
 We need to use the `struct` keyword:
@@ -12,7 +14,7 @@ struct Car
 
 Then, we can create a new variable of this `struct` type in the same way that we would with a `class`:
 
-``` cs
+``` csharp
 var car = new Car
 {
     Manufacturer = "Porsche",
@@ -23,4 +25,3 @@ Console.WriteLine(car.Manufacturer); // Porsche
 ```
 
 This `struct` is a type of complex data structure.
-

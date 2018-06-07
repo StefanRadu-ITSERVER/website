@@ -6,13 +6,13 @@ For example, `System.Console` exposes several static methods that we use for pri
 
 By referencing it **statically**, we can omit the **name of the class** when calling its static method:
 
-``` cs
+``` csharp
 using static System.Console;
 ```
 
 And we call it:
 
-``` cs
+``` csharp
 // Console.WriteLine("Hi, there!");
 WriteLine("Hi, there!");
 ```
@@ -20,4 +20,3 @@ WriteLine("Hi, there!");
 ## Idea
 
 This is the idea: you reference static classes with `static` to use their methods directly as if they were defined in this class.
-

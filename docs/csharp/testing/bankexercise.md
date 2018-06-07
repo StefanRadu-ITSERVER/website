@@ -69,12 +69,12 @@ Click the `BankAccount` class, press `Ctrl + .` and choose **Generate Class Bank
 ``` csharp
 internal class BankAccount
 {
-		private int id;
+	private int id;
 
-		public BankAccount(int id)
-		{
-				this.id = id;
-		}
+	public BankAccount(int id)
+	{
+		this.id = id;
+	}
 }
 ```
 
@@ -101,12 +101,12 @@ We need to assing the value of the `id` parameter to the `ID` property:
 ``` csharp
 internal class BankAccount
 {
-		public BankAccount(int id)
-		{
-				ID = id;
-		}
+	public BankAccount(int id)
+	{
+		ID = id;
+	}
 
-		public int ID { get; internal set; }
+	public int ID { get; internal set; }
 }
 ```
 
@@ -121,12 +121,12 @@ We need to **refactor** the code:
 ``` csharp
 public class BankAccount
 {
-		public int ID { get; private set; }
+	public int ID { get; private set; }
 
-		public BankAccount(int id)
-		{
-				ID = id;
-		}
+	public BankAccount(int id)
+	{
+		ID = id;
+	}
 }
 ```
 
@@ -135,7 +135,6 @@ Let's rerun the test to make sure it still passes. And it does.
 ::: tip
 We need to apply Unit Tests to make sure our code works as we expect.
 :::
-
 
 ::: tip XP
 TDD is part of **eXtreme Programming (XP)** which implies that you write tests before the code to be tested. 
@@ -149,14 +148,14 @@ For this, we can use the **AAA Pattern**:
 [TestMethod]
 public void TestID()
 {
-		// arrange
-		var bankAccount = new BankAccount(id: 1234);
+	// arrange
+	var bankAccount = new BankAccount(id: 1234);
 
-		// act
-		var id = bankAccount.ID;
+	// act
+	var id = bankAccount.ID;
 
-		// asssert
-		Assert.AreEqual(1234, id);
+	// asssert
+	Assert.AreEqual(1234, id);
 }
 ```
 
@@ -180,21 +179,20 @@ We have a shortcut: `testm` and name it `TestBalance`.
 [TestMethod]
 public void TestBalance()
 {
-		// arrange
-		var bankAccount = new BankAccount(id: 1234);
+	// arrange
+	var bankAccount = new BankAccount(id: 1234);
 
-		// act
-		var balance = bankAccount.Balance;
+	// act
+	var balance = bankAccount.Balance;
 
-		// assert
-		Assert.AreEqual(0, balance);
+	// assert
+	Assert.AreEqual(0, balance);
 }
 ```
 
 ::: tip Notice
 As you can see, a Unit Test is a piece of code which tests behaviour of a class member (methods, properties etc.).
 :::
-
 
 Let's generate the `Balance` property.
 
@@ -244,8 +242,8 @@ int id;
 [TestInitialize]
 public void Initialize()
 {
-		id = 1234;
-		bankAccount = new BankAccount(id);
+	id = 1234;
+	bankAccount = new BankAccount(id);
 }
 ```
 
@@ -255,25 +253,25 @@ Then, we can clean up the **test methods** a little bit:
 [TestMethod]
 public void TestID()
 {
-		// arrange
+	// arrange
 
-		// act
-		var balanceId = bankAccount.ID;
+	// act
+	var balanceId = bankAccount.ID;
 
-		// asssert
-		Assert.AreEqual(id, balanceId);
+	// asssert
+	Assert.AreEqual(id, balanceId);
 }
 
 [TestMethod]
 public void TestBalance()
 {
-		// arrange
+	// arrange
 
-		// act
-		var balance = bankAccount.Balance;
+	// act
+	var balance = bankAccount.Balance;
 
-		// assert
-		Assert.AreEqual(0, balance);
+	// assert
+	Assert.AreEqual(0, balance);
 }
 ```
 
@@ -293,11 +291,11 @@ So:
 [TestMethod]
 public void TestDeposit()
 {
-		// arrange
+	// arrange
 
-		// act
+	// act
 
-		// assert
+	// assert
 }
 ```
 
@@ -311,14 +309,14 @@ In the **assert**, we check to see if the `Balance` increased with the `amount`.
 [TestMethod]
 public void TestDeposit()
 {
-		// arrange
-		var amount = 40.50;
+	// arrange
+	var amount = 40.50;
 
-		// act
-		bankAccount.Deposit(amount);
+	// act
+	bankAccount.Deposit(amount);
 
-		// assert
-		Assert.AreEqual(amount, bankAccount.Balance);
+	// assert
+	Assert.AreEqual(amount, bankAccount.Balance);
 }
 ```
 
@@ -327,7 +325,7 @@ Click on `Deposit` to generate the method and run the test. And it fails.
 ``` csharp
 internal void Deposit(double amount)
 {
-		throw new NotImplementedException();
+	throw new NotImplementedException();
 }
 ```
 
@@ -336,7 +334,7 @@ So, when we need to increase the `Balance` with the `amount`:
 ``` csharp
 internal void Deposit(double amount)
 {
-		Balance += amount;
+	Balance += amount;
 }
 ```
 
@@ -366,14 +364,14 @@ Let's try to deposit `-40.99`.
 [TestMethod]
 public void TestNegativeDeposit()
 {
-		// arrange
-		var amount = -40.99;
+	// arrange
+	var amount = -40.99;
 
-		// act
-		bankAccount.Deposit(amount);
+	// act
+	bankAccount.Deposit(amount);
 
-		// assert
-		Assert.AreEqual(0, bankAccount.Balance);
+	// assert
+	Assert.AreEqual(0, bankAccount.Balance);
 }
 ```
 
@@ -386,10 +384,10 @@ So, we need to fix this. We could use an `if` statement:
 ``` csharp
 public void Deposit(double amount)
 {
-		if (amount > 0)
-		{
-				Balance += amount;
-		}
+	if (amount > 0)
+	{
+		Balance += amount;
+	}
 }
 ```
 
@@ -400,12 +398,12 @@ To do this, we need to throw an `exception` – in our case `ArgumentOutOfRangeE
 ``` csharp
 public void Deposit(double amount)
 {
-		if (amount < 0)
-		{
-				throw new ArgumentOutOfRangeException(nameof(amount), amount, "The amount must be positive");
-		}
+	if (amount < 0)
+	{
+		throw new ArgumentOutOfRangeException(nameof(amount), amount, "The amount must be positive");
+	}
 
-		Balance += amount;
+	Balance += amount;
 }
 ```
 
@@ -422,14 +420,14 @@ And we can do that:
 [ExpectedException(typeof(ArgumentOutOfRangeException))]
 public void TestNegativeDeposit()
 {
-		// arrange
-		var amount = -40.99;
+	// arrange
+	var amount = -40.99;
 
-		// act
-		bankAccount.Deposit(amount);
+	// act
+	bankAccount.Deposit(amount);
 
-		// assert
-		Assert.AreEqual(0, bankAccount.Balance);
+	// assert
+	Assert.AreEqual(0, bankAccount.Balance);
 }
 ```
 
@@ -453,15 +451,15 @@ So:
 [TestMethod]
 public void TestWithdraw()
 {
-		// arrange
-		var amount = 44.50;
-		bankAccount.Deposit(100);
+	// arrange
+	var amount = 44.50;
+	bankAccount.Deposit(100);
 
-		// act
-		bankAccount.Withdraw(amount);
+	// act
+	bankAccount.Withdraw(amount);
 
-		// assert
-		Assert.AreEqual(55.50, bankAccount.Balance);
+	// assert
+	Assert.AreEqual(55.50, bankAccount.Balance);
 }
 ```
 
@@ -470,7 +468,7 @@ Let's generate the `Withdraw` method.
 ``` csharp
 internal void Withdraw(double amount)
 {
-		throw new NotImplementedException();
+	throw new NotImplementedException();
 }
 ```
 
@@ -481,7 +479,7 @@ Okay, so let's implement the method:
 ``` csharp
 internal void Withdraw(double amount)
 {
-		Balance -= amount;
+	Balance -= amount;
 }
 ```
 
@@ -521,14 +519,14 @@ We need to check by throwing exceptions as well:
 [ExpectedException(typeof(ArgumentOutOfRangeException))]
 public void TestWithdrawNegativeAmount()
 {
-		// arrange
-		var amount = -50;
+	// arrange
+	var amount = -50;
 
-		// act
-		bankAccount.Withdraw(amount);
+	// act
+	bankAccount.Withdraw(amount);
 
-		// assert
-		Assert.AreEqual(0, bankAccount.Balance);
+	// assert
+	Assert.AreEqual(0, bankAccount.Balance);
 }
 ```
 
@@ -539,11 +537,11 @@ Fix the implementation:
 ``` csharp
 internal void Withdraw(double amount)
 {
-		if (amount < 0)
-		{
-				throw new ArgumentOutOfRangeException(nameof(amount), amount, "The amount must be positive");
-		}
-		Balance -= amount;
+	if (amount < 0)
+	{
+		throw new ArgumentOutOfRangeException(nameof(amount), amount, "The amount must be positive");
+	}
+	Balance -= amount;
 }
 ```
 
@@ -556,15 +554,15 @@ Let's do the same for the `TestWithdrawTooMuch`:
 [ExpectedException(typeof(ArgumentOutOfRangeException))]
 public void TestWithdrawTooMuch()
 {
-		// arrange
-		var amount = 145.99;
-		bankAccount.Deposit(100);
+	// arrange
+	var amount = 145.99;
+	bankAccount.Deposit(100);
 
-		// act
-		bankAccount.Withdraw(amount);
+	// act
+	bankAccount.Withdraw(amount);
 
-		// assert
-		Assert.AreEqual(100, bankAccount.Balance);
+	// assert
+	Assert.AreEqual(100, bankAccount.Balance);
 }
 ```
 
@@ -575,15 +573,15 @@ We need to add a new condition:
 ``` csharp
 internal void Withdraw(double amount)
 {
-		if (amount < 0)
-		{
-				throw new ArgumentOutOfRangeException(nameof(amount), amount, "The amount must be positive");
-		}
-		if (amount > Balance)
-		{
-				throw new ArgumentOutOfRangeException(nameof(amount), amount, "The amount is too much");
-		}
-		Balance -= amount;
+	if (amount < 0)
+	{
+		throw new ArgumentOutOfRangeException(nameof(amount), amount, "The amount must be positive");
+	}
+	if (amount > Balance)
+	{
+		throw new ArgumentOutOfRangeException(nameof(amount), amount, "The amount is too much");
+	}
+	Balance -= amount;
 }
 ```
 
@@ -603,36 +601,36 @@ Behold, this is the `BankAccount` class:
 ``` csharp
 public class BankAccount
 {
-		public int ID { get; private set; }
-		public double Balance { get; private set; }
+	public int ID { get; private set; }
+	public double Balance { get; private set; }
 
-		public BankAccount(int id)
+	public BankAccount(int id)
+	{
+		ID = id;
+	}
+
+	public void Deposit(double amount)
+	{
+		if (amount < 0)
 		{
-				ID = id;
+			throw new ArgumentOutOfRangeException(nameof(amount), amount, "The amount must be positive");
 		}
 
-		public void Deposit(double amount)
-		{
-				if (amount < 0)
-				{
-						throw new ArgumentOutOfRangeException(nameof(amount), amount, "The amount must be positive");
-				}
+		Balance += amount;
+	}
 
-				Balance += amount;
-		}
-
-		public void Withdraw(double amount)
+	public void Withdraw(double amount)
+	{
+		if (amount < 0)
 		{
-				if (amount < 0)
-				{
-						throw new ArgumentOutOfRangeException(nameof(amount), amount, "The amount must be positive");
-				}
-				if (amount > Balance)
-				{
-						throw new ArgumentOutOfRangeException(nameof(amount), amount, "The amount is too much");
-				}
-				Balance -= amount;
+			throw new ArgumentOutOfRangeException(nameof(amount), amount, "The amount must be positive");
 		}
+		if (amount > Balance)
+		{
+			throw new ArgumentOutOfRangeException(nameof(amount), amount, "The amount is too much");
+		}
+		Balance -= amount;
+	}
 }
 ```
 
@@ -702,11 +700,11 @@ We can use a **try catch** here to not let the app crash:
 ``` csharp
  try
 {
-		bankAccount.Withdraw(100);
+	bankAccount.Withdraw(100);
 }
 catch (Exception ex)
 {
-		Console.WriteLine(ex.Message);
+	Console.WriteLine(ex.Message);
 }
 ```
 

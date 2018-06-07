@@ -1,4 +1,4 @@
-# Readonly properties
+# Readonly Properties
 
 I am going to create a `Report` interface which has two properties `createdOn` and `type`:
 

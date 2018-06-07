@@ -9,7 +9,7 @@ This is what the `ArrayList` brings to the **table**: the ability to dynamically
 By resizing I mean to `add` and `remove` items as you need without being restricted by a capacity/size.
 
 ## How it works?
-> As elements are added to an `ArrayList`, the capacity is automatically increased as required through reallocation [read more](https://msdn.microsoft.com/en-us/library/system.collections.arraylist(v=vs.110).aspx#Anchor_6)
+> As elements are added to an `ArrayList`, the capacity is automatically increased as required through reallocation [MSDN](https://msdn.microsoft.com/en-us/library/system.collections.arraylist(v=vs.110).aspx#Anchor_6)
 
 ``` csharp
 var arrList = new ArrayList();

@@ -129,26 +129,5 @@ foreach (var item in list)
 }
 ```
 
-
-## Type safe
-Generics provide a way to use data structures that are type safe. 
-That means you can be sure that the items being added to the collection  are of a specific type, but the benefits go further. 
-Using Generics gives you better performance and here's why. 
-.NET has the concept of boxing and unboxing. 
-In other words, when a value type, like an integer, has to be converted to an object,  which is what the ArrayList holds, that is called boxing.
-Unboxing is when the object is converted back to a value type. 
-Now, as you might imagine, this is not an efficient process. 
-By telling the Generic collection, ahead of time, what the data type will be, this process can be avoided, dramatically improving performance.
-
-
-
-## Explanation
-
-(consider repharsing it)
-Now, what makes the list different is that within these angle brackets, I can specify the data type that I want the list to hold. In this case, I'm specifying that I want the list to hold integers.
-
-If I try to add a data type that's different than what's specified here, that error gets caught at compile time versus at runtime.
-
 ## Conclusion
 This is the power of Generics.
-

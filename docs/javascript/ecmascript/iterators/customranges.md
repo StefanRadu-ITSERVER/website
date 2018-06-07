@@ -12,7 +12,7 @@ You can generate a range by using:
 - generator
 - the `Symbol.iterator`
 
-``` es6
+``` js
 Number.prototype[Symbol.iterator] = function* () {
   for (let i = 0; i < this; i++) {
     yield i;

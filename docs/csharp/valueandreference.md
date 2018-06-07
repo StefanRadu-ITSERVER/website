@@ -6,7 +6,7 @@ The easiest way is to compare them in code :D
 
 I am going to create `2` numbers:
 
-``` cs
+``` csharp
 var number1 = 1;
 var number2 = 2;
 ```
@@ -15,14 +15,14 @@ These are two simple `integer` varibles.
 
 Let's print their value to the console:
 
-``` cs
+``` csharp
 Console.WriteLine(number1); // 1
 Console.WriteLine(number2); // 2
 ```
 
 Now, let's assign the value of the second one to the first one and print again:
 
-``` cs
+``` csharp
 number1 = number2;
 
 Console.WriteLine(number1); // 2
@@ -33,7 +33,7 @@ Nothing is unusual here (a simple assigment).
 
 Now, let's change the value of `number2` to something else and print them again:
 
-``` cs
+``` csharp
 number2 = 3;
 
 Console.WriteLine(number1); // 1
@@ -44,7 +44,7 @@ So, we can see our assigments work well. These variables hold their values separ
 
 Now, let's create `2` lists which hold a number:
 
-``` cs
+``` csharp
 var list1 = new List<int> { 1 };
 var list2 = new List<int> { 2 };
 ```
@@ -58,7 +58,7 @@ Console.WriteLine(list2[0]); // 2
 
 Now, let's assign the second list to the first one as we did before with the numbers:
 
-``` cs
+``` csharp
 list1 = list2;
 
 Console.WriteLine(list1[0]); // 2
@@ -69,7 +69,7 @@ And we indeed see the same behavior: they have the same item inside.
 
 Now, let's change the number from the second list and see what we get:
 
-``` cs
+``` csharp
 list2[0] = 3;
 
 Console.WriteLine(list1[0]); // 3
@@ -86,7 +86,7 @@ Value types hold the values directly, whereas reference types hold references to
 
 When we did this:
 
-``` cs
+``` csharp
 list1 = list2;
 ```
 
@@ -96,7 +96,6 @@ So, these two references get the same value.
 
 When we change the contents of `list2` afterwards, we change the value of the object. When we get the values of the lists, obviously we get the new value because they retrieve the same object.
 
-
 ## Summary
 
 Numbers are **value types** whilst `Lists` are objects. They store their data differently.
@@ -105,14 +104,13 @@ Let's see another example, this time with a `struct` and a custom `class`.
 
 `struct` is a value type, wheres `class` (or objects) are reference types.
 
-
 ## Example 2 
 
 I am going to create a `Rectangle` as a `struct` and as a `class` to show the same concept.
 
 Let's start with the `struct`:
 
-``` cs
+``` csharp
 public struct Rectangle
 {
     public int Length { get; set; }
@@ -123,7 +121,7 @@ public struct Rectangle
 
 Then, let's create two rectangles and, for brevity, we are going to look at the `Width` property:
 
-``` cs
+``` csharp
 var rectangle1 = new Rectangle
 {
     Width = 1,
@@ -142,7 +140,7 @@ Console.WriteLine(rectangle2.Width); // 5
 
 Now, assign the second to the first one and change the `Width` of the second one:
 
-``` cs
+``` csharp
 rectangle1 = rectangle2;
 
 rectangle2.Width = 8;
@@ -157,7 +155,7 @@ We are copying only the value from one to another one, not like references.
 
 Now, you only need to change `struct` to `class`, and we get for the last ones;
 
-``` cs
+``` csharp
 Console.WriteLine(rectangle1.Width); // 8
 Console.WriteLine(rectangle2.Width); // 8
 ```
@@ -174,14 +172,14 @@ Now, one more thing that you have to consider here is the `null` value.
 
 We can assign `null` to any reference type:
 
-``` cs
+``` csharp
 var list1 = new List<int> { 1 };
 list1 = null;
 ```
 
 This is impossible to do for value types:
 
-``` cs
+``` csharp
 var number1 = 1;
 number1 = null; // massive error
 ```
@@ -190,7 +188,7 @@ number1 = null; // massive error
 
 All types have **default values**:
 
-``` cs
+``` csharp
 int number1;      // 0
 char character1;  // '\0'
 bool boolean;     // false
@@ -215,13 +213,13 @@ You know it's a difference between `null` and `0`. `0` means something, but `nul
 
 This is where we can use **nullable types** which adds the ability to any type to get the `null` value:
 
-``` cs
+``` csharp
 int? number1 = null;
 ```
 
 So, we can do this by adding the `?` question mark after the type.
 
-Now, even though it is a number (a value type), it can have `null` as a value. :bowtie:
+Now, even though it is a number (a value type), it can have `null` as a value. :grin`:
 
 
 ### Summary
@@ -235,4 +233,3 @@ Now, even though it is a number (a value type), it can have `null` as a value. :
 
 All the others are **reference types**:
 - objects (`string`, custom objects)
-

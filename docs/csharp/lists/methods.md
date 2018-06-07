@@ -8,75 +8,84 @@ var fruits = new List<string>();
 
 ## Add
 
+``` csharp
 fruits.Add("cherry");
 fruits.Add("banana");
 fruits.Add("watermelon");
-
+```
 
 ## Remove
-fruits.Remove("banana");
 
+``` csharp
+fruits.Remove("banana");
+```
 
 ## RemoveAt
+``` csharp
 fruits.RemoveAt(1);
-
+```
 
 ## Contains
 
+``` csharp
 if (fruits.Contains("cherry"))
 {
     Console.WriteLine("Yes, there are cherries");
 }
+```
 
 ## IndexOf
-
+``` csharp
 var index = fruits.IndexOf("watermelon");
+```
 
 ## Insert
+``` csharp
 fruits.Insert(1, "lemon");
-
+```
 
 ## Count
+``` csharp
 Console.WriteLine(fruits.Count());
-
+```
 
 ## Clear
 This empties a list:
 
+``` csharp
 fruits.Clear();
-
+```
 
 ## AddRange
 
 Add a collection to a list:
 
-  var array = new string[] { "Banana", "Melon", "Plumb" };
-            fruits.AddRange(array);
+``` csharp
+var array = new string[] { "Banana", "Melon", "Plumb" };
+fruits.AddRange(array);
+```
 
 ## string.Join
 
 It converts a list to a string
-            
+
+``` csharp
 var listString = string.Join(",", fruits);
 Console.WriteLine(listString);
-
+```
 
 ## Split
 The reverse operation is Split
 
+``` csharp
 var list = listString.Split(',').ToList();
-
+```
 
 ## Sort
 
-  fruits.Sort();
-
-
-
-
-
-
-
+``` csharp
+fruits.Sort();
+```
 
 ## Custom sort with IComparer
 
@@ -126,10 +135,3 @@ foreach (var laptop in laptops)
 var sortedLaptops = laptops
     .OrderBy(laptop => laptop.Price);
 ```
-
-
-
-
-
-
-

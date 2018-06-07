@@ -1,4 +1,4 @@
-# Rest parameters
+# Rest Parameters
 
 Let's look at how to implement rest parameters. :eyes:
 

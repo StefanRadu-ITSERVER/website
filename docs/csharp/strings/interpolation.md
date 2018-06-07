@@ -15,7 +15,7 @@ var message = string.Format("I'm {0} and {1} years old.", name, age);
 Console.WriteLine(message);
 ```
 
-The newer approach is **string interpolation** which was introduced in `C#6`:
+The newer approach is **string interpolation** which was introduced in C#6:
 
 ``` csharp
 var name = "Daniel";
@@ -33,7 +33,7 @@ No need to use numbers, remember the order etc. :relaxed:
 
 
 ::: warning C# vs C++ strings
-In a `C#` string, there is no `null terminating character` (that is the `\0`). 
+In a **C#** string, there is no `null terminating character` (that is the `\0`). 
 
-As you may or may not know, in `C++` each string must end with this **special character** which denotes the fact that the string has ended.
+As you may or may not know, in **C++** each string must end with this **special character** which denotes the fact that the string has ended.
 :::

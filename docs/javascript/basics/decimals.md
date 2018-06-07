@@ -1,3 +1,5 @@
+# Decimals
+
 We can use the `toFixed` method to add decimal points to an integer:
 
 ``` js

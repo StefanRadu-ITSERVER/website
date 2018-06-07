@@ -1,4 +1,4 @@
-## Regex: capitalize
+# Capitalize
 
 Let's create a function which capitalizes each word in a sentence using **Regex**.
 

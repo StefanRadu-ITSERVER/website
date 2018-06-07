@@ -1,3 +1,4 @@
+# Declaration
 
 Let's see what type of variables we can make in JavaScript:
 

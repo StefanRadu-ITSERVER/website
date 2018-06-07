@@ -224,4 +224,3 @@ var totalManufacturers = phones
 
 Console.WriteLine(totalManufacturers);
 ```
-

@@ -74,7 +74,6 @@ Refactoring:
 2. make the class `public`
 3. rename the test method to `TestNameAge`.
 
-
 ::: tip private set
 Encapsulation:
 - you cannot change the value of this property outside this class.
@@ -275,9 +274,9 @@ And now the test passes :satisfied:
 
 This is called **Data Validation**.
 
-
 ::: tip Explanation
 The backing field which stores the data can be changed if the value passes the conditions in the set assesor of the associtated property.
+
 Here we didn't achieve Encapsulation because the property which operates on this backing field can be whenever called outside this class and it can change the data in the backing field.
 :::
 
@@ -462,6 +461,6 @@ catch (Exception ex)
 So, if exceptions are thrown, then we print the message on the screen. Usually we will do more things than this.
 
 
-And that it all, folks! :bowtie:
+And that it all, folks! :grin:
 
 Check out the source code on [GitHub](https://github.com/danielsimionescu/csharp-unittesting-dog).

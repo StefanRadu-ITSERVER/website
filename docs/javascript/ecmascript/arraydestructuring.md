@@ -1,4 +1,6 @@
-Let's get to know array destructuring in JavaScript :relaxed:
+# Array Destructuring
+
+Let's get to know array destructuring in JavaScript :smile:
 
 We have here an array of colors:
 

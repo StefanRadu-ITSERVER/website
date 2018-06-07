@@ -1,4 +1,4 @@
-## Custom filters
+# Custom Filters
 
 Let's create a custom filter in Vue.js
 

@@ -1,3 +1,5 @@
+# Template Strings
+
 Prior to **template strings**, we would use the `+` operator for concatenation.
 
 Let's see the before and after :wink:

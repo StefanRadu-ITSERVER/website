@@ -1,4 +1,6 @@
-# Equality
+# Operators
+
+## Equality
 
 Let's look at equality.
 

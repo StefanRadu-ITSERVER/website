@@ -1,3 +1,5 @@
+# Types
+
 There are `3` data types:
 
 - number: `12`, `4.5`
