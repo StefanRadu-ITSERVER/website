@@ -1,5 +1,7 @@
 # Binary Search
 
+<youtube :src="'fOMh45TT0BI'"/>
+
 ::: tip
 You don't have to implement this yourself, you can use the built-in method showed [here](/csharp/arrays/methods.html#array-binarysearch).
 :::

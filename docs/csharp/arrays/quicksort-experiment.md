@@ -1,10 +1,12 @@
-## Quicksort experiment
+# Quicksort experiment
 
-Now, you might been thinking: _"should I use [this](/csharp/arrays/quicksort-generics.md) algorithm to sort my arrays?"_. Well, yes if you want that, but `.NET` comes shipped with a sorting method for arrays: `Array.Sort()`.
+<youtube :src="'RAlzbQYo8j8'"/>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+Now, you might been thinking: _"should I use [this](/csharp/arrays/quicksort-generics.md) algorithm to sort my arrays?"_. 
 
-## `Array.Sort`
+Well, yes if you want that, but `.NET` comes shipped with a sorting method for arrays called `Array.Sort()` :smiley:
+
+## Array.Sort
 
 `Array.Sort` uses the **introspective sort** which is a combination of:
 1. Insertion sort
@@ -17,12 +19,11 @@ So, use `Array.Sort`. You don't have to implement anything and it's much faster 
 
 Don't trust me? Let's experiment it ;)
 
-<!-- ![Experiment](https://media.giphy.com/media/FMCC4QgBQTBPG/giphy.gif) -->
+![Experiment](https://media.giphy.com/media/FMCC4QgBQTBPG/giphy.gif)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+[Giphy](https://giphy.com/gifs/funny-explosion-FMCC4QgBQTBPG)
 
-
----
+## Implementation
 
 I am going to create a function to return an array of random integers:
 
@@ -39,7 +40,7 @@ private static int[] RandomNumbers(int size, int min, int max)
 }
 ```
 
-You can pass a `size` (how many items), a `min` (the minimum starting value) and the `max` (the maximum starting value).
+You can pass a `size` (how many items), a `min` (the minimum starting value) and the `max` (the maximum ending value).
 
 I will create `2` million numbers ranging from `0` to `500` (there are so many duplicates here :hushed:).
 
@@ -47,14 +48,11 @@ I will create `2` million numbers ranging from `0` to `500` (there are so many d
 var numbers = RandomNumbers(2000000, 0, 500);
 ```
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
 I will create a new `Stopwatch` to check how much time it takes. I will start it before sorting and then stop it after sorting the array, then I will print the time:
 
 ``` csharp
 var watch = Stopwatch.StartNew();
-Array.Sort(numbers);
+SortArray(numbers);
 watch.Stop();
 
 var time = watch.ElapsedMilliseconds;
@@ -64,9 +62,6 @@ Console.WriteLine($"\nTime with Array.Sort: {time}ms");
 And it took `365ms` to sort. 
 
 That's good, I guess  :confused:, but let's compare this with the built-in function in C#. 
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 
 I will copy all the random numbers into another array because I want to have the same numbers to work with. And then, I will just use the same `StopWatch` to track both intervals:
 
@@ -88,9 +83,6 @@ time = watch.ElapsedMilliseconds;
 Console.WriteLine($"\nTime with Array.Sort: {time}ms");
 ```
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
 Here's the result:
 ```
 Time with SortArray: 362ms
@@ -99,9 +91,6 @@ Time with Array.Sort: 145ms
 ```
 
 Well, not even close, more than twice that time, more exactly `2.496...` times more.
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 
 ### Refactoring
 
@@ -126,9 +115,6 @@ PrintExecutionTime(() => SortArray(numbers));
 PrintExecutionTime(() => Array.Sort(copy));
 ```
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
 ## Conclusion
 
 So, as I said, the `Array.Sort` is more optimized and uses three different sorting algorithms. 
@@ -140,7 +126,6 @@ You can find the source code on
 
 See you guys ;)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+![Bye](https://media.giphy.com/media/GB0lKzzxIv1te/giphy.gif)
 
-
-<!-- ![Bye](https://media.giphy.com/media/GB0lKzzxIv1te/giphy.gif) -->
+[Giphy](https://giphy.com/gifs/bye-goodbye-the-little-rascals-GB0lKzzxIv1te)

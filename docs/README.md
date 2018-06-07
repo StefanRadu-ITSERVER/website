@@ -25,13 +25,13 @@ This website contains all the posts that I use for my [YouTube channel](https://
 
 You can drop me an email at: [danielsimionescu1996@gmail.com](mailto:danielsimionescu1996@gmail.com)
 
-<!-- ## Donation Link
+## Donation Link
 
 If you think that my work helps you, consider supporting me through a donation :) 
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/danielsimi)
 
-With your help, I can continue providing programmers around the world with the best resources. -->
+With your help, I can continue providing programmers around the world with the best resources
 
 ## Codementor
 

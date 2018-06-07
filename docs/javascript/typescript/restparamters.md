@@ -1,6 +1,6 @@
 # Rest parameters
 
-Let's look how to implement the rest parameters.
+Let's look at how to implement rest parameters. :eyes:
 
 If you are familiar with C#, then it is similar to `params`.
 

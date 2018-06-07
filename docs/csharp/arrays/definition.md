@@ -1,12 +1,14 @@
 # Definition 
 
+Let's see why we need to use arrays in C# :grin:
+
+<youtube :src="'i-jS6EEHmiQ'"/>
+
 ## What are arrays?
 Arrays are actually objects :thinking:.
 
-
 ## Why using arays?
 You can use arrays to store same-type variables.
-
 
 ### Example
 

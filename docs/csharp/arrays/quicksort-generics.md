@@ -1,4 +1,6 @@
-## Generic Quicksort
+# Generic Quicksort
+
+<youtube :src="'gCE108OWnro'"/>
 
 I am going to make the `Quicksort` method from this [post](/csharp/arrays/quicksort.md) Generic:
 - use the `T` type, 
@@ -89,7 +91,7 @@ PrintArray(names);
 ```
 And this works wonders :D
 
-### Custom class
+## Custom class
 
 Let's try with our own `class`. 
 
@@ -143,5 +145,5 @@ Wonderful :)
 You can find the source code on
 [GitHub](https://github.com/danielsimionescu/csharp-quicksort).
 
-### Conclusion
+## Conclusion
 But should we use this approach? I don't recommend so. Let's see why in our next experiment.

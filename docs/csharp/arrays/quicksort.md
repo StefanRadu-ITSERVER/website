@@ -1,8 +1,6 @@
----
-title: Quicksort
----
+# Quicksort
 
-## Quicksort
+<youtube :src="'wygsfgtpApI'"/>
 
 ::: warning
 This is just a demonstration of the `Quicksort` algorithm. 
@@ -11,8 +9,6 @@ This is just a demonstration of the `Quicksort` algorithm.
 
 See **here** my experiment comparing the following algorithm with Microsoft's.
 :::
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 Let's start with an array of integers:
 ```csharp
@@ -27,8 +23,6 @@ foreach (var number in numbers)
 }
 ```
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 Let's create a function called `SortArray` to which we can pass this array (we could make this as an **extension method** if we so desire). 
 
 Nevertheless, press `Ctrl` and `.` to generate the function. 
@@ -39,8 +33,6 @@ private static void SortArray(int[] numbers)
 
 }
 ```
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 Inside it, I am going to call a `Quicksort` function to which I pass:
 - the array
@@ -62,8 +54,6 @@ private static void Quicksort(int[] numbers, int left, int right)
 ::: tip Clean Code
 This is a good coding practice: to have functions that implement isolated things.
 :::
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Implementation
 
@@ -110,8 +100,8 @@ private static void Quicksort(int[] numbers, int left, int right)
 
 So, the array is sorted ;)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+You can find the source code on
+[GitHub](https://github.com/danielsimionescu/csharp-quicksort).
 
 ## Conclusion
 
@@ -119,10 +109,6 @@ Now, you might want to **sort** arrays of type `char`, `string` or even a **cust
 
 Well, these functions **won't** work because they are only for **integers**, but with the power of **Generics** they can – which is coming up next. :D
 
-<!-- ![Baby power](https://media.giphy.com/media/KTXX5iczlM1zi/giphy-downsized-large.gif) -->
-
 ::: tip Generics
 Generics offer amazing code **reusability** (great to write **less** code).
 :::
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

@@ -1,6 +1,10 @@
 # Resize
-There is a method called `Array.Resize` which might do what it expresses through its name: to resize (change the **size**) of the array. But we said that arrays are **immutable** :fearful:. 
 
+<youtube :src="'wxdeu739VZc'"/>
+
+## Array.Resize
+
+There is a method called `Array.Resize` which might do what it expresses through its name: to resize (change the **size**) of the array. But we said that arrays are **immutable** :fearful:. 
 
 Well, this statement still holds true. What the `Resize` method does is that it creates a new array in the background and reassigns it to the initial array. So, it's not changing the array. 
 

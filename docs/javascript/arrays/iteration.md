@@ -10,6 +10,8 @@ We can iterate through this array with `foreach`, `for` and also with `for of`.
 
 ## foreach
 
+<youtube :src="'T8yqnTu8Z48'"/>
+
 ``` javascript
 cars.forEach(car => {
   console.log(car);
@@ -17,6 +19,8 @@ cars.forEach(car => {
 ```
 
 ## for
+
+<youtube :src="'QU3vBvbIPSI'"/>
 
 ``` javascript
 for (let i = 0; i < cars.length; i++) {
@@ -27,6 +31,8 @@ for (let i = 0; i < cars.length; i++) {
 
 ## for of
 
+<youtube :src="'SkU3NxJ_WS8'"/>
+
 ``` javascript
 for (const car of cars) {
   console.log(car);
@@ -34,6 +40,8 @@ for (const car of cars) {
 ```
 
 ## reversed order
+
+<youtube :src="'J5OxnKXLm3M'"/>
 
 We can also iterate in reverse by using the `for` loop:
 

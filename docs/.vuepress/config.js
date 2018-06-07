@@ -47,8 +47,8 @@ module.exports = {
           { text: "Vue.js", link: '/javascript/vuejs/' }
         ]
       },
-      { text: 'GitHub', link: 'https://github.com/danielsimionescu' },
       { text: 'Codementor', link: 'https://www.codementor.io/danielsimionescu1996' },
+      { text: 'PayPal', link: 'https://www.paypal.me/danielsimi'},
       { text: 'YouTube', link: 'https://www.youtube.com/channel/UCPIe87uLDW-QZ5FnUZqdxoA' },
     ],
     sidebar: {
@@ -80,6 +80,11 @@ module.exports = {
         'binarysearch',
         'aggregates',
         'opinion',
+      ],
+      '/csharp/operators/': [
+        '',
+        'nameof',
+        'nullcoalescing'
       ],
       '/csharp/linq/': [
         '',

@@ -1,5 +1,7 @@
 # Aggregate Functions
 
+<youtube :src="'p1kHS2AefCw'"/>
+
 We are going to see how to calculate the `sum`, `average`, `min` and `max` for an array of prices.
 
 I am going to show two ways:

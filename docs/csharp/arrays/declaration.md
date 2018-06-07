@@ -1,6 +1,8 @@
-# Adding items
+# Adding Items
 
 Let's see how we can add items to arrays in C#.
+
+<youtube :src="'f1UTrIVhqjI'"/>
 
 ## Creating an Array
 
@@ -73,7 +75,7 @@ So, essentially, we cannot:
 - do so many things :weary:
 
 ![Throwing table](https://media.giphy.com/media/dRgcwKJaGgWgo/giphy.gif)
-<br>
+
 [Giphy](https://giphy.com/gifs/cheezburger-rage-anger-dRgcwKJaGgWgo)
 
 ## List

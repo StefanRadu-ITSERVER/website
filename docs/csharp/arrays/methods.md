@@ -1,6 +1,8 @@
 # Methods
 We are going to see the top `10` most important methods provided by the `Array` class.
 
+<youtube :src="'CXG79V9aloc'"/>
+
 ## IndexOf
 This returns the **index** of an item inside the array – in our case `2` for lemon :lemon:
 

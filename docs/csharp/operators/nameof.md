@@ -1,8 +1,8 @@
-# nameof operator
+# nameof Operator
 
 For example, we might have the following class with a `Deposit` method which implements some validation:
 
-``` cs
+``` csharp
 internal class BackAccount
 {
     public double Balance { get; private set; }
@@ -23,7 +23,7 @@ If, for instance, we want to rename the `amount` parameter to something else, th
 
 This is where we can use the `nameof` operator:
 
-``` cs
+``` csharp
 internal class BackAccount
 {
     public void Deposit(double amount)

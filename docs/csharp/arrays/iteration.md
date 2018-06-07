@@ -6,9 +6,11 @@ title: Iteration
 
 Let's see how we can iterate over C# arrays. 
 
+<youtube :src="'CDyT-MLVUtg'"/>
+
 But first, we need to look at the `Length` property.
 
-## `Length` property
+## Length property
 
 You can find **how many** items are in an array by accessing its `Length` property:
 

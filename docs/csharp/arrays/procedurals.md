@@ -5,6 +5,11 @@ I am going to show you how to **procedurally** implement the **array methods** l
 Again, you should not reinvent the wheel. These methods are built-in C#, but if you are curious, let's see them! :smirk:
 
 ## IndexOf
+
+First up, we are going to see the **IndexOf** method :satisfied:
+
+<youtube :src="'kZps2nFAA8A'"/>
+
 Let's try to find the **index** of an item in an array:
 
 ``` csharp
@@ -33,6 +38,11 @@ Once you find the item you are looking for, you can __STOP__ the execution to ma
 [Giphy](https://giphy.com/gifs/woman-stop-weather-EQZnVtaNxwLyo)
 
 ## Exists
+
+Let's see how to implement **Exists**
+
+<youtube :src="'wFrhJQuQv0E'"/>
+
 We can check to see if an item **exists** in an array based on a condition:
 
 ``` csharp
@@ -52,6 +62,11 @@ Console.WriteLine(exists); // True
 ```
 
 ## Find
+
+Can we find an item in an array? :smirk:
+
+<youtube :src="'SE-XW_TqiNw'"/>
+
 We can simply find an item in an array (this returns the **first occurrence**):
 
 ``` csharp
@@ -71,6 +86,11 @@ Console.WriteLine(item); // cherry
 ```
 
 ## FindLast
+
+Let's go from the end to the beginning :grin:
+
+<youtube :src="'D5VIzIA80dA'"/>
+
 We can find the **last** item that meets a condition:
 
 ``` csharp
@@ -90,6 +110,11 @@ Console.WriteLine(item); // plum
 ```
 
 ## FindIndex
+
+We might want to find teh index of an item, right? :smile:
+
+<youtube :src="'k6Is2QJI5Ww'"/>
+
 Let's find the **index** of an item based on a condition:
 
 ``` csharp
@@ -109,6 +134,11 @@ Console.WriteLine(index); // 0
 ```
 
 ## FindAll
+
+Let's get multiple items ;)
+
+<youtube :src="'Mlb0zxhW6yI'"/>
+
 We can also find **all** the items in an array that respect a certain condition:
 
 ``` csharp
@@ -132,6 +162,11 @@ foreach (var item in result)
 ```
 
 ## Reverse
+
+We might need some reversing as well :grimacing:
+
+<youtube :src="'uQ1R9JNJ9z0'"/>
+
 Let's reverse the whole array:
 
 ``` csharp
@@ -150,6 +185,11 @@ foreach (var item in result)
 ```
 
 ## Copy
+
+And the last one :satisfied:
+
+<youtube :src="'iWWiacm6wU0'"/>
+
 Let's copy the **items** of one array to another:
 
 ``` csharp

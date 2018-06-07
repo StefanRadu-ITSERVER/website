@@ -1,4 +1,8 @@
-# Object initializer
+# Object Initializer
+
+Let's use **object initializers** with arrays :grin:
+
+<youtube :src="'TxmJnoW8Fd8'"/>
 
 We can declare, assign and initialize the array at once to avoid writing assignments as separate operations. 
 
