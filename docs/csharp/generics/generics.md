@@ -1,11 +1,26 @@
-# Non-Generics vs Generics
+# Generics vs Non-Generics
+
+<youtube :src="'5xz1sn06NoE'"/>
 
 ## Non-Generics
-We are going to look at the ArraList which is **Non-Generic**.
+We are going to create an `ArrayList` which is **Non-Generic**.
+
+Let's create an **array variable** to which we add all sorts of items:
+
+``` csharp
+var array = new ArrayList
+{
+    21,
+    "computer",
+    true
+};
+```
+
+But what about adding an **object**?
 
 For this example, we need to create a custom class called **Song**.
 
-Let's create a variable song:
+Firstly, let's create a variable called `song`:
 
 ``` csharp
 var song = new Song()
@@ -15,7 +30,7 @@ var song = new Song()
 };
 ```
 
-Then, hover over `Song`, press `Ctrl + .` and then *Generate Class Song*.
+Then, hover over the `Song` class, press `Ctrl + .`, and then choose to *Generate Class Song*.
 
 This will generate the following code:
 
@@ -31,16 +46,10 @@ internal class Song
 }
 ```
 
-Then, we can create an array variable in which we add all sorts of items:
+And we can add it to the array.
 
 ``` csharp
-var array = new ArrayList
-{
-    21,
-    song,
-    "computer",
-    true
-};
+array.Add(song);
 ```
 
 Let's print the values of the array:
@@ -51,6 +60,8 @@ foreach (var item in array)
     Console.WriteLine(item);
 }
 ```
+
+### Limitations
 
 Now this works, but what about printing the `Name` property of the song?
 
@@ -64,10 +75,10 @@ foreach (var item in array)
 ```
 
 ::: warning 
-Notice the extra set of parantheses surrounding `(Song)item`.
+Notice the extra set of parantheses surrounding `(Song)item`
 :::
 
-To fix this, we can check to see if the current item is a `Song` object and then we can try to print its `Name`. 
+To fix this, we can check to see if the current item is a `Song` object and then we can try to print its `Name` property.
 
 ``` csharp
 foreach (var item in array)
@@ -92,21 +103,21 @@ foreach (var item in array)
 }
 ```
 
-Well, you can see how difficult it became to operate on items. 
+So, you can see how **difficult** it became to operate on individual items. 
 
-Indeed, we have flexibility to add any item we want, but in the long run it's not maitainable.
-
-This code is prone to errors.
+Indeed, we have **flexibility** to add any item we want, but in the long run it's not **maintainable**. This code is prone to errors.
 
 ## Generics
 
-This is where we have **Generics**. Let's create a list of type `Song`.
+This is where we have **Generics**. 
+
+Let's create a list of type `Song`.
 
 ``` csharp
 var list = new List<Song>();
 ```
 
-Now, to this list we can add only songs:
+To this list, we can add only `Song` objects:
 
 ``` csharp
 var list = new List<Song>
@@ -117,10 +128,10 @@ var list = new List<Song>
 ```
 
 ::: tip
-We get now compile time errors (before we execute the code) when we add something wrong.
+Now, we get compile time errors (meaning before we execute the code) when we add something wrong to a collection.
 :::
 
-We can now get the `Name` attribute of the song directly without casting:
+Let's get the `Name` property of the song directly without casting:
 
 ``` csharp
 foreach (var item in list)

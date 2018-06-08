@@ -1,5 +1,7 @@
 # ArrayList
 
+<youtube :src="'SddErz0_d9M'"/>
+
 Let's talk about the `ArrayList` class for a moment. 
 
 You remember that we said: an array cannot change its size. Right? (immutability)

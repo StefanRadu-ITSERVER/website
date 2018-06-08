@@ -1,12 +1,8 @@
----
-title: Iteration
----
-
 # Iterating over Arrays
 
-Let's see how we can iterate over C# arrays. 
-
 <youtube :src="'CDyT-MLVUtg'"/>
+
+Let's see how we can iterate over C# arrays. 
 
 But first, we need to look at the `Length` property.
 
