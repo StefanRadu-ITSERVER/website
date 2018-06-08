@@ -1,4 +1,4 @@
-## JSON Serializer
+# JSON Serializer
 
 We need to install a **NuGet** package called: **Newtonsoft.Json**.
 
