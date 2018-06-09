@@ -1,37 +1,19 @@
 # Shortcuts in Visual Studio Code
 
-[VSCode Shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
-
-Reasons to learn them:
-- Accelerating Development
-- Increasing Productivity
-- Simplyfing Writing
-- Looking Fancy
-
-`Ctrl` + `K` `Ctrl` + `S` – Shortcuts
-
-# View Level
-
-`Click` + `Tab` – Open in Preview Mode
-
-`Double Click` – Open File
-
-`Ctrl` + `Enter` – Commit Changes (message is required)
-
-## Views Level
-
-`Ctrl` + `Shift` + `E` – Explorer View
-
-`Ctrl` + `Shift` + `S` – Search View
-
-`Ctrl` + `Shift` + `C` – Git View
-
-`Ctrl` + `Shift` + `D` – Debugger View
-
-`Ctrl` + `Shift` + `X` – Extensions View
+Here's a PDF from VSCode with 
+[Shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf).
 
 
-`Ctrl` + `B` – open/close views
+## Reasons:
+- accelerating development
+- increasing productivity
+- simplifying writing
+- looking fancy
+
+
+## All Shortcuts
+
+`Ctrl` + `K` + `Ctrl` + `S` – Shortcuts
 
 
 ## Word Level
@@ -42,15 +24,15 @@ Reasons to learn them:
 
 `Ctrl` + `D` x2 – Select Next Occurence
 
-
 `F12` – Go to Definition
 
 `Alt` + `F12` – Peek Definition
 
-
 `Ctrl` + `.` – Quick Fix
 
 `F2` – Rename
+
+`Shift` + `F12` – Show References
 
 
 ## Words Level
@@ -66,7 +48,11 @@ Reasons to learn them:
 `Ctrl` + `K` + `Ctrl` + `F` – Format Selection
 
 
+
 ## Line Level
+
+`Ctrl` + `I` – Select Line
+
 
 `Ctrl` + `X` – Copy
 
@@ -96,7 +82,7 @@ Reasons to learn them:
 
 ## Lines Level
 
-`Ctrl` + `I` – Select Multiple Lines
+`Ctrl` + `I` x2 – Select Multiple Lines
 
 
 `Ctrl` + `Shift` + `\` - Jump to Matching Bracket
@@ -113,6 +99,12 @@ Reasons to learn them:
 
 
 `Alt` + `Click` – Insert Cursor
+
+
+`Shift` + `Alt` + `→` – Expand Selection
+
+`Shift` + `Alt` + `←` – Shrink Selection
+
 
 ## Document Level
 
@@ -152,6 +144,8 @@ Reasons to learn them:
 
 `Ctrl` + `Shift` + `V` – Markdown Preview
 
+`Shift` + `Alt` + `0` – Editor Mode
+
 
 ## Documents Level
 
@@ -169,6 +163,7 @@ Reasons to learn them:
 `Ctrl` + `Shift` + `Tab` – Toggle Previous
 
 
+`Ctrl` + `F4` – Close
 
 `Ctrl` + `Alt` + `T` – Close Others
 
@@ -183,7 +178,12 @@ Reasons to learn them:
 `Ctrl` + `1` / `2` / `3` – Toggle Editors
 
 
-`Ctrl` + `P` – Open Recent Files
+`Ctrl` + `P` – Recent Files
+
+
+`Ctrl` + `Shift` + `F` – Search in All
+
+`Ctrl` + `Shift` + `H` – Replace in All
 
 
 `Ctrl` + `T` – All Symbols
@@ -192,6 +192,63 @@ Reasons to learn them:
 `Alt` + `→` – Go Forward
 
 `Alt` + `←` – Go Back
+
+
+## View Level
+
+`Click` + `Tab` – Open in Preview Mode
+
+`Double Click` – Open File
+
+`Ctrl` + `Enter` – Commit Changes (message is required)
+
+## Views Level
+
+`Ctrl` + `Shift` + `E` – Explorer View
+
+`Ctrl` + `Shift` + `S` – Search View
+
+`Ctrl` + `Shift` + `C` – Git View
+
+`Ctrl` + `Shift` + `D` – Debugger View
+
+`Ctrl` + `Shift` + `X` – Extensions View
+
+
+`Ctrl` + `B` – open/close views
+
+
+## App Level
+
+`F1` – Command Palette
+
+`Ctrl` + `Shift` + `P` – Command Palette
+
+`F11` – Fullscreen :heart_eyes:
+
+`Ctrl` + `Shift` + `W` – Close
+
+`Ctrl` + `,` – Settings
+
+`Ctrl` + `M` – Toggle Tab
+
+
+## Apps Level
+
+`Ctrl` + `Shift` + `N` – New Window
+
+
+## Debug
+
+`F9` – Set Breakpoint
+
+`F5` – Start/Continue
+
+`Shift` + `F5` – Stop
+
+`F11` – Step Into
+
+`F10` – Step Over
 
 
 ## Terminal Level
@@ -206,24 +263,6 @@ This is great when an app runs and you need to install an npm package for exampl
 `Ctrl` + `Shift` + `P` – Run Selection
 
 
-## App Level
-
-`F1` – Command Palette
-
-`F11` – Fullscreen :heart_eyes:
-
-`Ctrl` + `Shift` + `W` – Close
-
-`Ctrl` + `,` – Settings
-
-`Ctrl` + `M` – Toggle Tab
-
-
-## Apps Level
-
-`Ctrl` + `Shift` + `N` – New Instance
-
-
 ## Emmet Shortcuts
 
 `html`
@@ -231,4 +270,3 @@ This is great when an app runs and you need to install an npm package for exampl
 `div#container`
 
 `ul>li*5`
-

@@ -29,6 +29,8 @@ module.exports = {
           { text: "Numbers", link: '/csharp/numbers' },
           { text: "Value and reference", link: '/csharp/valueandreference' },
           { text: "Tips", link: '/csharp/tips' },
+          { text: "Visual Studio", link: '/csharp/visualstudio/' },
+          { text: "Windows", link: '/csharp/windows/' },
         ]
       },
       {
@@ -50,7 +52,9 @@ module.exports = {
           { text: "Lodash", link: '/javascript/lodash/' },
           { text: "Vanilla JS", link: '/javascript/vanillajs/' },
           { text: "Vue.js", link: '/javascript/vuejs/' },
-          { text: "Tips", link: '/javascript/tips' }
+          { text: "Tips", link: '/javascript/tips' },
+          { text: "Firefox", link: '/javascript/firefox/' },
+          { text: "VSCode", link: '/javascript/vscode/' }
         ]
       },
       { text: 'Codementor', link: 'https://www.codementor.io/danielsimionescu1996' },
@@ -158,6 +162,14 @@ module.exports = {
         'dogexercise',
         'studentexercise',
       ],
+      '/csharp/visualstudio/': [
+        '',
+        'shortcuts'
+      ],
+      '/csharp/windows/': [
+        '',
+        'shortcuts'
+      ],
 
       // JAVASCRIPT
       '/javascript/basics/': [
@@ -258,6 +270,14 @@ module.exports = {
         '',
         'inputtrigger',
         'customfilter'
+      ],
+      '/javascript/vscode/': [
+        '',
+        'shortcuts'
+      ],
+      '/javascript/firefox/': [
+        '',
+        'shortcuts'
       ],
 
       '/': [
