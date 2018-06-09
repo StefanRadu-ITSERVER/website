@@ -1,14 +1,14 @@
-# Shortcuts in Visual Studio Code
+# Shortcuts in VSCode
 
-Here's a PDF from VSCode with 
-[Shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf).
+Here's a PDF from Visual Studio Code with 
+[Shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) :wink:
 
 
 ## Reasons:
 - accelerating development
 - increasing productivity
 - simplifying writing
-- looking fancy
+- looking fancy :sunglasses:
 
 
 ## All Shortcuts
@@ -247,6 +247,8 @@ Here's a PDF from VSCode with
 `Shift` + `F5` – Stop
 
 `F11` – Step Into
+
+`Shift` + `F11` – Step Out
 
 `F10` – Step Over
 
