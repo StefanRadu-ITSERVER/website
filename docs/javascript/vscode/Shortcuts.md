@@ -18,7 +18,7 @@ Here's a PDF from Visual Studio Code with
 
 ## Word Level
 
-`Ctrl` + `Space` – Open Suggestions
+`Ctrl` + `Space` – Suggestions
 
 `Ctrl` + `D` – Select Word
 
@@ -54,6 +54,11 @@ Here's a PDF from Visual Studio Code with
 `Ctrl` + `I` – Select Line
 
 
+`Home` – Move Start
+
+`End` – Move End
+
+
 `Ctrl` + `X` – Copy
 
 `Ctrl` + `V` – Paste
@@ -61,6 +66,8 @@ Here's a PDF from Visual Studio Code with
 `Ctrl` + `C` – Cut
 
 `Ctrl` + `Z` – Undo
+
+`Ctrl` + `Y` – Redo
 
 
 `Ctrl` + `[` – Indent Left
@@ -85,7 +92,7 @@ Here's a PDF from Visual Studio Code with
 `Ctrl` + `I` x2 – Select Multiple Lines
 
 
-`Ctrl` + `Shift` + `\` - Jump to Matching Bracket
+`Ctrl` + `Shift` + `\` - Go to Brace
 
 
 `Ctrl` + `Alt` + `Shift` + `↑` – Insert Cursor Up
@@ -106,7 +113,7 @@ Here's a PDF from Visual Studio Code with
 `Shift` + `Alt` + `←` – Shrink Selection
 
 
-## Document Level
+## File Level
 
 `Alt` + `Shift` + `F` – Format All
 
@@ -147,7 +154,7 @@ Here's a PDF from Visual Studio Code with
 `Shift` + `Alt` + `0` – Editor Mode
 
 
-## Documents Level
+## Files Level
 
 `Ctrl` + `N` – New File
 
