@@ -164,11 +164,11 @@ module.exports = {
       ],
       '/csharp/visualstudio/': [
         '',
-        'shortcuts'
+        'shortkeys'
       ],
       '/csharp/windows/': [
         '',
-        'shortcuts'
+        'shortkeys'
       ],
 
       // JAVASCRIPT
@@ -273,11 +273,11 @@ module.exports = {
       ],
       '/javascript/vscode/': [
         '',
-        'shortcuts'
+        'shortkeys'
       ],
       '/javascript/firefox/': [
         '',
-        'shortcuts'
+        'shortkeys'
       ],
 
       '/': [
