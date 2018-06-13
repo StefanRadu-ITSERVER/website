@@ -36,12 +36,6 @@ Let's see some shortcuts in Visual Studio :grinning:
 
 `Shift` + `F12` – Find All References
 
-`Alt` + `2` – Open References 
-
-
-`Ctrl` + `F5` – Change Method Signature
-
-
 ## Words Level
 
 `Ctrl` + `→` – Next Word
@@ -225,7 +219,7 @@ Let's see some shortcuts in Visual Studio :grinning:
 
 ## Debug
 
-`F9` – Set Breakpoint
+`F9` – Toggle Breakpoint
 
 `Ctrl` + `Shift` + `F9` – Remove All Breakpoints
 
