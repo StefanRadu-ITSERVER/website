@@ -52,6 +52,7 @@ module.exports = {
           { text: "Lodash", link: '/javascript/lodash/' },
           { text: "Vanilla JS", link: '/javascript/vanillajs/' },
           { text: "Vue.js", link: '/javascript/vuejs/' },
+          { text: "Angular", link: '/javascript/angular/' },
           { text: "Tips", link: '/javascript/tips' },
           { text: "Firefox", link: '/javascript/firefox/' },
           { text: "VSCode", link: '/javascript/vscode/' }
@@ -278,6 +279,9 @@ module.exports = {
       '/javascript/firefox/': [
         '',
         'shortkeys'
+      ],
+      '/javascript/angular/': [
+        ''
       ],
 
       '/': [
