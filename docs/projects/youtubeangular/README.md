@@ -10,3 +10,9 @@ Concepts contained in this series:
 No prior knowledge of any of these is required.
 
 I will explain every single step of the process.
+
+## Part 1: Creating the project.
+
+
+
+
