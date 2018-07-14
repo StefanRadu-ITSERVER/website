@@ -123,6 +123,10 @@ Nice blog post. Very well explained. I liked that he\n- made an intro and a wrap
 
 - [VueJs: The Basics](https://coligo.io/vuejs-the-basics/)
 
+- [11 Vue.js UI Component Libraries You Should Know In 2018 by Jonathan Saring](https://blog.bitsrc.io/11-vue-js-component-libraries-you-should-know-in-2018-3d35ad0ae37f)
+
+- [Building a Bookmarking App with Electron, VueJs, and Firebase](https://coligo.io/bookmarking-app-electron-vuejs-firebase/)
+
 ### Courses
 
 - [Vue JS 2.0 - Mastering Web Apps by David Katz](https://www.udemy.com/vue-web-apps/)

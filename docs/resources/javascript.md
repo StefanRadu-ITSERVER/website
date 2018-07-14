@@ -24,19 +24,27 @@ Concepts:
 
 - [What's New In TypeScript by Anders Hejlsberg](https://youtu.be/0ChtcZmb3dI)
 
+- [webpack: The Core Concepts by Sean Larkin](https://webpack.academy/p/the-core-concepts)
+
 ### Documentations
 
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 - [Webdriver.io](http://webdriver.io/)
 
-- [Lodash Guide](https://lodash.com/docs/4.17.5)
+- [Lodash](https://lodash.com/docs/4.17.5)
 
 - [Mocha.js](https://mochajs.org/)
 
 - [Nightwatch.js](http://nightwatchjs.org/)
 
 - [Inferno](https://infernojs.org/docs/guides/installation)
+
+- [Visual Studio Code](https://code.visualstudio.com/docs)
+
+- [TypeScript](http://www.typescriptlang.org/docs/home.html)
+
+- [Babel](https://babeljs.io/learn-es2015/)
 
 ### Series
 
@@ -50,6 +58,20 @@ One of the best series I have watched. He worked a lot to gather all the importa
 
 - [Webpack for Everyone](https://laracasts.com/series/webpack-for-everyone)
 
+- [Migrating to TypeScript 2 by Emmanuel Henri](https://www.lynda.com/JavaScript-tutorials/Migrating-TypeScript-2/585078-2.html) :heavy_check_mark:
+
+Nice resource to get acustomed to the TypeScript documentation.
+
+- [Learning App Building with Vanilla JavaScript by Sasha Vodnik](https://www.lynda.com/JavaScript-tutorials/Learning-App-Building-Vanilla-JavaScript/609026-2.html) :heavy_check_mark:
+
+- [Visual Studio Code for Web Developers by Joe Marini](https://www.lynda.com/Visual-Studio-tutorials/Visual-Studio-Code-Web-Developers/588785-2.html) :heavy_check_mark:
+
+- [Functional-Lite JavaScript by Kyle Simpson](https://www.lynda.com/JavaScript-tutorials/Functional-Lite-JavaScript/604261-2.html) :heavy_check_mark:
+
+- [Learning Functional Programming with JavaScript by Shaun Wassell](https://www.lynda.com/JavaScript-tutorials/Learning-Functional-Programming-JavaScript/585272-2.html) :heavy_check_mark:
+
+- [Typescript for C# Programmers by Jesse Liberty](https://www.lynda.com/course-tutorials/Typescript-C-Programmers/543000-2.html) :heavy_check_mark:
+
 ### Blog Posts
 
 - [Tasks, microtasks, queues and schedules by Jack Archibald](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
@@ -58,8 +80,22 @@ One of the best series I have watched. He worked a lot to gather all the importa
 
 He didn't push back from explaining things in detail and at the same time provided four examples with code. Really nice!
 
+- [The most popular JavaScript links of 2017 by Chris Brandrick](https://medium.com/dailyjs/the-most-popular-javascript-links-of-2017-e4616e8b48c7)
+
+- [10 Interview Questions Every JavaScript Developer Should Know by Eric Elliott](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95)
+
+- [Master the JavaScript Interview: What is a Pure Function? by Eric Elliott](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976)
+
+- [Javascript — ES8 Introducing `async/await` Functions by Ben Garrison](https://medium.com/@_bengarrison/javascript-es8-introducing-async-await-functions-7a471ec7de8a)
+
 ### GitHub Repos
 
-- [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+- [You Don't Know JS by Kyle Simpson](https://github.com/getify/You-Dont-Know-JS)
 
+- [Overview of ECMAScript 6 features by Luke Hoban](https://github.com/lukehoban/es6features)
+
+
+### eBooks
+
+- [Front-End Developer Handbook 2017 by Cody Lindley](https://frontendmasters.com/books/front-end-handbook/2017/)
 
