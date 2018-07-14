@@ -30,7 +30,7 @@ Concepts:
 
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-- [Webdriver.io](http://webdriver.io/)
+- [Webdriver](http://webdriver.io/)
 
 - [Lodash](https://lodash.com/docs/4.17.5)
 
@@ -88,12 +88,13 @@ He didn't push back from explaining things in detail and at the same time provid
 
 - [Javascript — ES8 Introducing `async/await` Functions by Ben Garrison](https://medium.com/@_bengarrison/javascript-es8-introducing-async-await-functions-7a471ec7de8a)
 
+- [An Overview of JavaScript Testing in 2017 by Vitali Zaidman](https://medium.com/powtoon-engineering/a-complete-guide-to-testing-javascript-in-2017-a217b4cd5a2a)
+
 ### GitHub Repos
 
 - [You Don't Know JS by Kyle Simpson](https://github.com/getify/You-Dont-Know-JS)
 
 - [Overview of ECMAScript 6 features by Luke Hoban](https://github.com/lukehoban/es6features)
-
 
 ### eBooks
 

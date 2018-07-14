@@ -37,7 +37,7 @@ I do not recommend this resource. The author is not consistent with the chosen t
 
 - [Vue.js 2.0 In 60 Minutes](https://youtu.be/z6hQqgvGI4Y)
 
-- ["VueNYC - Vue.js: If Rails and React made a baby - Anton Revich](https://youtu.be/CRULxTl_wik)
+- [VueNYC - Vue.js: If Rails and React made a baby - Anton Revich](https://youtu.be/CRULxTl_wik)
 
 - [Full Stack Vue.js & Laravel](https://youtu.be/DJ6PD_jBtU0)
 
@@ -58,6 +58,14 @@ An interesting video to watch. A little bit long, but he explains what were the 
 - [Pine Wu - var vetur = vscode + vue; | VueConf 2017](https://youtu.be/05tNXJ-Kric)
 
 - [Evan You - Modern Frontend with Vue.js - Laracon EU 2016](https://youtu.be/D_z-RAweP1k)
+
+- [Introducing vue-test-utils, Edd Yerburgh, London Vue.js #6 October 2017](https://youtu.be/23eNzgSGleQ)
+
+- [STATE & STORE | VueJS 2 & Vuex | Learning the Basics](https://youtu.be/2CSr2vBApSI)
+
+### Conferences
+
+- [Sean Larkin - Code splitting patterns in Vue.js | VueConf 2017](https://youtu.be/rn97hCNQsKI)
 
 ### Series
 
@@ -127,6 +135,12 @@ Nice blog post. Very well explained. I liked that he\n- made an intro and a wrap
 
 - [Building a Bookmarking App with Electron, VueJs, and Firebase](https://coligo.io/bookmarking-app-electron-vuejs-firebase/)
 
+- [CodingExplained – Vue.js by Bo Andersen](https://codingexplained.com/coding/front-end/vue-js)
+
+- [Vue.js Tutorials](https://coligo.io/tag/vue)
+
+- [Posts About Vue.js](https://alligator.io/vuejs)
+
 ### Courses
 
 - [Vue JS 2.0 - Mastering Web Apps by David Katz](https://www.udemy.com/vue-web-apps/)
@@ -151,8 +165,9 @@ A must for begginers with Vue.js.\nI like the fact that it goes through so many 
 
 - [nativescript-vue](https://nativescript-vue.org/en/docs/introduction/)
 
-- [Vue.js Server-Side Rendering Guide](https://ssr.vuejs.org/en/)
+- [bootstrap-vue](https://bootstrap-vue.js.org/docs/)
 
+- [Vue.js Server-Side Rendering Guide](https://ssr.vuejs.org/en/)
 
 ### GitHub Repos
 
@@ -161,3 +176,7 @@ A must for begginers with Vue.js.\nI like the fact that it goes through so many 
 - [Vue Paper Dashboard by Cristi Jora](https://github.com/cristijora/vue-paper-dashboard)
 
 - [Jayway Vue.js 2.0 workshop](https://jayway.github.io/vue-js-workshop/)
+
+### People
+
+- [Edd Yerburgh](https://medium.freecodecamp.org/@eddyerburgh)
