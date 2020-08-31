@@ -1,6 +1,6 @@
-# Count Factorials
+# Count Factors
 
-**Counting the factorials of a number in C#**
+**Counting the factors of a number in C#**
 
 Let's calculate the total factors of a number:
 
